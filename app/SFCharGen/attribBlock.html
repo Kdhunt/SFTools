@@ -1,0 +1,86 @@
+<div><h4>Attributes</h4></div>
+<div class="attribBlock">
+    <div class="labels">
+        <div class="stat"><variable-race-bonus></variable-race-bonus>{{variableThemeBonus}}{{variableClassBonus}}</div>
+        <div class="score">score</div>
+        <div class="mod">modifier</div>
+        <div class="upgradeScore">upgraded score</div>
+        <div class="upgradeMod">upgraded modifier</div>
+    </div>
+
+    <!-- end test -->
+    <div class="attrib str">
+        <div class="stat">
+            <div class="attribVals" ng-hide="races.selectedRace == null ||races.selectedRace == '' || races.selectedRace == 1 && variableRaceBonusAttrib == ''" ng-show="races.selectedRace == 1 && variableRaceBonusAttrib != null || races.selectedRace != 1 && races.selectedRace != null">
+                <div class="raise" ng-click="attribIncrease('str')"></div>
+                <div class="lower" ng-click="attribDecrease('str')"></div>
+            </div>
+            STR
+        </div>
+        <div class="score" ng-model="strScore" ng-invalid="{{strScore().$valid}}" attrib-in-range>{{strScore()}}</div>
+        <div class="mod"><span>=</span>{{calcAttribModifier(strScore())}}</div>
+        <div class="upgradeScore"><span>+</span></div>
+        <div class="upgradeMod"><span>+</span></div>
+    </div>
+    <div class="attrib dex">
+        <div class="stat">
+            <div class="attribVals" ng-hide="races.selectedRace == null ||races.selectedRace == '' || races.selectedRace == 1 && variableRaceBonusAttrib == ''" ng-show="races.selectedRace == 1 && variableRaceBonusAttrib != null || races.selectedRace != 1 && races.selectedRace != null">
+                <div class="raise" ng-click="attribIncrease('dex')"></div>
+                <div class="lower" ng-click="attribDecrease('dex')"></div>
+            </div>
+            DEX</div>
+        <div class="score" ng-model="dexScore">{{dexScore()}}</div>
+        <div class="mod"  ng-bind="calcAttribModifier(dexScore())"><span>=</span>{{calcAttribModifier(dexScore)}}</div>
+        <div class="upgradeScore"><span>+</span></div>
+        <div class="upgradeMod"><span>+</span></div>
+    </div>
+    <div class="attrib con">
+        <div class="stat">
+            <div class="attribVals" ng-hide="races.selectedRace == null ||races.selectedRace == '' || races.selectedRace == 1 && variableRaceBonusAttrib == ''" ng-show="races.selectedRace == 1 && variableRaceBonusAttrib != null || races.selectedRace != 1 && races.selectedRace != null">
+                <div class="raise" ng-click="attribIncrease('con')"></div>
+                <div class="lower" ng-click="attribDecrease('con')"></div>
+            </div>
+            CON</div>
+        <div class="score" ng-model="conScore">{{conScore()}}</div>
+        <div class="mod"><span>=</span>{{calcAttribModifier(conScore())}}</div>
+        <div class="upgradeScore"><span>+</span></div>
+        <div class="upgradeMod"><span>+</span></div>
+    </div>
+    <div class="attrib int">
+        <div class="stat">
+            <div class="attribVals" ng-hide="races.selectedRace == null ||races.selectedRace == '' || races.selectedRace == 1 && variableRaceBonusAttrib == ''" ng-show="races.selectedRace == 1 && variableRaceBonusAttrib != null || races.selectedRace != 1 && races.selectedRace != null">
+                <div class="raise" ng-click="attribIncrease('int')"></div>
+                <div class="lower" ng-click="attribDecrease('int')"></div>
+            </div>
+            INT</div>
+        <div class="score" ng-model="intScore">{{intScore()}}</div>
+        <div class="mod"><span>=</span>{{calcAttribModifier(intScore())}}</div>
+        <div class="upgradeScore"><span>+</span></div>
+        <div class="upgradeMod"><span>+</span></div>
+    </div>
+    <div class="attrib wis">
+        <div class="stat">
+            <div class="attribVals" ng-hide="races.selectedRace == null ||races.selectedRace == '' || races.selectedRace == 1 && variableRaceBonusAttrib == ''" ng-show="races.selectedRace == 1 && variableRaceBonusAttrib != null || races.selectedRace != 1 && races.selectedRace != null">
+                <div class="raise" ng-click="attribIncrease('wis')"></div>
+                <div class="lower" ng-click="attribDecrease('wis')"></div>
+            </div>
+            WIS</div>
+        <div class="score" ng-model="wisScore">{{wisScore()}}</div>
+        <div class="mod"><span>=</span>{{calcAttribModifier(wisScore())}}</div>
+        <div class="upgradeScore"><span>+</span></div>
+        <div class="upgradeMod"><span>+</span></div>
+    </div>
+    <div class="attrib cha">
+        <div class="stat" >
+            <div class="attribVals" ng-hide="races.selectedRace == null ||races.selectedRace == '' || races.selectedRace == 1 && variableRaceBonusAttrib == ''" ng-show="races.selectedRace == 1 && variableRaceBonusAttrib != null || races.selectedRace != 1 && races.selectedRace != null">
+                <div class="raise" ng-click="attribIncrease('cha')"></div>
+                <div class="lower" ng-click="attribDecrease('cha')"></div>
+            </div>
+            CHA</div>
+        <div class="score" ng-model="chaScore">{{chaScore()}}</div>
+        <div class="mod" ><span>=</span>{{calcAttribModifier(chaScore())}}</div>
+        <div class="upgradeScore"><span>+</span></div>
+        <div class="upgradeMod"><span>+</span></div>
+    </div>
+
+</div>
