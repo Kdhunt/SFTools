@@ -3,23 +3,28 @@
     <div class="labels">
         <div class="classSkill"></div>
         <div class="untrained"></div>
+        <div class="armorcheck"></div>
         <div class="skillName"></div>
         <div class="total">total</div>
         <div class="ranks">ranks</div>
         <div class="classBonus">class bonus</div>
         <div class="abilityMod">ability mod</div>
-        <div class="miscMod">misc mod</div>
+        <div class="miscSkillMod">misc mod</div>
     </div>
     <div class="skill" ng-repeat="x in skillList">
-        <div class="classSkill classSkill{{selectedClass.skillMods[x.name].classSkill}}" ></div>
-        <div class="untrained useUntrainedcs{{x.useUntrained}}"></div>
-        <div class="untrained armorCheck{{x.armorCheck}}"></div>
-        <div class="skillName">{{x.DisplayName}}</div>
-        <div class="total">{{calcSkilltotal(x.name)}}</div>
-        <div class="ranks" ng-model="character.SkillRanks[x.name]"></div>
-        <div class="classBonus">{{selectedClass.skills[x.name]}}</div>
+        <div class="classSkill" ><span ng-show="classes[selectedClass].skillModifiers[x.name].classSkill"><div class="csSquare"></div></span></div>
+        <div class="untrained"><span ng-hide="x.useUntrained">&#1007;</span></div>
+        <div class="armorcheck" ><span ng-hide="!x.armorCheck">*</span></div>
+        <div class="skillName">{{x.DisplayName}}({{x.baseAttrib}})</div>
+        <div class="total">{{calcSkillTotal(x.name, x.baseAttrib)}}</div>
+        <div class="ranks" ng-model="x.ranks">
+            <div class="skillRanks">
+                <div class="raise" ng-click="skillIncrease(x.name)"></div>
+                <div class="lower" ng-click="skillDecrease(x.name)"></div>
+            </div>{{x.ranks}}</div>
+        <div class="classBonus">{{calcClassSkillMod(x.name)}}</div>
         <div class="abilityMod"><span>=</span>{{getAttribMod(x.baseAttrib)}}</div>
-        <div class="miscMod">misc mod</div>
+        <div class="miscSkillMod">{{calcRacialSkillMod(x.name)}}</div>
     </div>
 
 

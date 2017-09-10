@@ -9,32 +9,11 @@ angular.module('StarfinderApp', [
 ]).
 directive("variableRaceBonus", function() {
     return {
-        template : "<span ng-show='races.selectedRace == 1'>+{{races.availableRaces[races.selectedRace].attributeModifiers.any}} to:</span> " +
-        "<select ng-show='races.selectedRace == 1' ng-change='addRaceBonus()' ng-model='variableRaceBonusAttrib'>" +
+        template : "<span ng-show=\"races.selectedRace == 'Human'\">+{{races.availableRaces[races.selectedRace].attributeModifiers.any}} to:</span> " +
+        "<select ng-show=\"races.selectedRace == 'Human'\" ng-change='addRaceBonus()' ng-model='variableRaceBonusAttrib'>" +
         "<option value=''>Choose...</option>" +
-        "<option value='str'>STR</option>" +
-        "<option value='dex'>DEX</option>" +
-        "<option value='con'>CON</option>" +
-        "<option value='int'>INT</option>" +
-        "<option value='wis'>WIS</option>" +
-        "<option value='cha'>CHA</option>" +
+        "<option ng-repeat='x in attribList' value='{{x}}'>{{x}}</option>"+
         "</select>"
-    };
-}).
-directive('attribInRange', function() {
-    return {
-        require: 'ngModel',
-        link: function(scope, element, attr, mCtrl) {
-            function attribInRangeValidation(value) {
-                if (value <= 18) {
-                    mCtrl.$setValidity('attribInRange', true);
-                } else {
-                    mCtrl.$setValidity('attribInRange', false);
-                }
-                return value;
-            }
-            mCtrl.$parsers.push(attribInRangeValidation);
-        }
     };
 }).
 directive('charGenAttributesBlock', function() {
