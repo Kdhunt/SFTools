@@ -102,8 +102,9 @@ div.element * {width:100%;}
 .skillsBlock .labels,.skillsBlock .skill{color: #5a5a5a; font-size: 10px; display:flex; border-bottom:#b3d4fc 1px dashed;}
 
 .skillName{width:250px;font-size:12px;}
-.untrained,.classSkill,.armorcheck{width:10px;}
+.untrained,.classSkill,.armorcheck{width:10px;margin-right:2px;}
 .total,.ranks,.classBonus,.abilityMod,.miscSkillMod{width:60px; margin: 2.5px; padding:3px; border: 1px dotted #d2d2d2;text-align:center;}
+.ranks{width:80px;}
 /*.untrained>span,.armorcheck>span {display:none;}*/
 .footnote{font-size: 8px;}
 

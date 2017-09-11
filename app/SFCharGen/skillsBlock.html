@@ -4,7 +4,7 @@
         <div class="classSkill"></div>
         <div class="untrained"></div>
         <div class="armorcheck"></div>
-        <div class="skillName"></div>
+        <div class="skillName">Available points: {{availSkillPoints()}}</div>
         <div class="total">total</div>
         <div class="ranks">ranks</div>
         <div class="classBonus">class bonus</div>
@@ -12,7 +12,7 @@
         <div class="miscSkillMod">misc mod</div>
     </div>
     <div class="skill" ng-repeat="x in skillList">
-        <div class="classSkill" ><span ng-show="classes[selectedClass].skillModifiers[x.name].classSkill"><div class="csSquare"></div></span></div>
+        <div class="classSkill" ><span ng-show="classes.availableClasses[classes.selectedClass].skillModifiers[x.name].classSkill"><div class="csSquare"></div></span></div>
         <div class="untrained"><span ng-hide="x.useUntrained">&#1007;</span></div>
         <div class="armorcheck" ><span ng-hide="!x.armorCheck">*</span></div>
         <div class="skillName">{{x.DisplayName}}({{x.baseAttrib}})</div>

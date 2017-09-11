@@ -2,15 +2,15 @@
 
 angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
 
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/SFCharGen', {
-    templateUrl: 'SFCharGen/SFCharGen.html',
-    controller: 'SFCharGenCtrl'
-  });
-}])
+    .config(['$routeProvider', function ($routeProvider) {
+        $routeProvider.when('/SFCharGen', {
+            templateUrl: 'SFCharGen/SFCharGen.html',
+            controller: 'SFCharGenCtrl'
+        });
+    }])
 
-.controller('SFCharGenCtrl', function($scope) {
-        $scope.races= {
+    .controller('SFCharGenCtrl', function ($scope) {
+        $scope.races = {
             "selectedRace": null,
             "availableRaces": {
                 "Android": {
@@ -615,7 +615,7 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 }
             }
         };
-        $scope.themes={
+        $scope.themes = {
             "selectedTheme": null,
             "availableThemes": {
                 "Ace Pilot": {
@@ -1434,23 +1434,23 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 }
             }
         };
-        $scope.classes={
+        $scope.classes = {
             "selectedClass": null,
             "availableClasses": {
                 "Envoy": {
                     "name": "Envoy",
-                    "hp":6,
-                    "sp":6,
-                    "spModSkill":"con",
-                    "keyAbility":["cha"],
-                    "skillRanksPerLvl":8,
-                    "levelGains":{
+                    "hp": 6,
+                    "sp": 6,
+                    "spModSkill": "con",
+                    "keyAbility": ["cha"],
+                    "skillRanksPerLvl": 8,
+                    "levelGains": {
                         1: {
                             "baseAttackBonus": 0,
                             "fortitudeSaveBonus": 0,
                             "reflexSaveBonus": 2,
                             "willSaveBonus": 2,
-                            "features":{}
+                            "features": {}
 
                         }
                     },
@@ -1539,18 +1539,18 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 },
                 "Mechanic": {
                     "name": "Mechanic",
-                    "hp":6,
-                    "sp":6,
-                    "spModSkill":"con",
-                    "keyAbility":["int"],
-                    "skillRanksPerLvl":4,
-                    "levelGains":{
+                    "hp": 6,
+                    "sp": 6,
+                    "spModSkill": "con",
+                    "keyAbility": ["int"],
+                    "skillRanksPerLvl": 4,
+                    "levelGains": {
                         1: {
                             "baseAttackBonus": 0,
                             "fortitudeSaveBonus": 2,
                             "reflexSaveBonus": 2,
                             "willSaveBonus": 0,
-                            "features":{}
+                            "features": {}
 
                         }
                     },
@@ -1639,18 +1639,18 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 },
                 "Mystic": {
                     "name": "Mystic",
-                    "hp":6,
-                    "sp":6,
-                    "spModSkill":"con",
-                    "keyAbility":["wis"],
-                    "skillRanksPerLvl":6,
-                    "levelGains":{
+                    "hp": 6,
+                    "sp": 6,
+                    "spModSkill": "con",
+                    "keyAbility": ["wis"],
+                    "skillRanksPerLvl": 6,
+                    "levelGains": {
                         1: {
                             "baseAttackBonus": 0,
                             "fortitudeSaveBonus": 0,
                             "reflexSaveBonus": 0,
                             "willSaveBonus": 2,
-                            "features":{}
+                            "features": {}
 
                         }
                     },
@@ -1739,18 +1739,18 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 },
                 "Operative": {
                     "name": "Operative",
-                    "hp":6,
-                    "sp":6,
-                    "spModSkill":"con",
-                    "keyAbility":["dex"],
-                    "skillRanksPerLvl":8,
-                    "levelGains":{
+                    "hp": 6,
+                    "sp": 6,
+                    "spModSkill": "con",
+                    "keyAbility": ["dex"],
+                    "skillRanksPerLvl": 8,
+                    "levelGains": {
                         1: {
                             "baseAttackBonus": 0,
                             "fortitudeSaveBonus": 0,
                             "reflexSaveBonus": 2,
                             "willSaveBonus": 2,
-                            "features":{}
+                            "features": {}
 
                         }
                     },
@@ -1839,18 +1839,18 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 },
                 "Solarian": {
                     "name": "Solarian",
-                    "hp":7,
-                    "sp":7,
-                    "spModSkill":"con",
-                    "keyAbility":["cha"],
-                    "skillRanksPerLvl":4,
-                    "levelGains":{
+                    "hp": 7,
+                    "sp": 7,
+                    "spModSkill": "con",
+                    "keyAbility": ["cha"],
+                    "skillRanksPerLvl": 4,
+                    "levelGains": {
                         1: {
                             "baseAttackBonus": 1,
                             "fortitudeSaveBonus": 2,
                             "reflexSaveBonus": 0,
                             "willSaveBonus": 2,
-                            "features":{}
+                            "features": {}
 
                         }
                     },
@@ -1939,18 +1939,18 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 },
                 "Soldier": {
                     "name": "Soldier",
-                    "hp":7,
-                    "sp":7,
-                    "spModSkill":"con",
-                    "keyAbility":["str", "dex"],
-                    "skillRanksPerLvl":4,
-                    "levelGains":{
+                    "hp": 7,
+                    "sp": 7,
+                    "spModSkill": "con",
+                    "keyAbility": ["str", "dex"],
+                    "skillRanksPerLvl": 4,
+                    "levelGains": {
                         1: {
                             "baseAttackBonus": 1,
                             "fortitudeSaveBonus": 2,
                             "reflexSaveBonus": 0,
                             "willSaveBonus": 2,
-                            "features":{}
+                            "features": {}
 
                         }
                     },
@@ -2039,18 +2039,18 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 },
                 "Technomancer": {
                     "name": "Technomancer",
-                    "hp":5,
-                    "sp":5,
-                    "spModSkill":"con",
-                    "keyAbility":["int"],
-                    "skillRanksPerLvl":4,
-                    "levelGains":{
+                    "hp": 5,
+                    "sp": 5,
+                    "spModSkill": "con",
+                    "keyAbility": ["int"],
+                    "skillRanksPerLvl": 4,
+                    "levelGains": {
                         1: {
                             "baseAttackBonus": 0,
                             "fortitudeSaveBonus": 0,
                             "reflexSaveBonus": 0,
                             "willSaveBonus": 2,
-                            "features":{}
+                            "features": {}
 
                         }
                     },
@@ -2139,95 +2139,95 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 }
             }
         };
-        $scope.alignments={
-            selectedAlignment:null,
-            availableAlignments:["Lawful Good","Lawful Neutral","Lawful Evil","Neutral Good","Neutral","Neutral Evil","Chaotic Good","Chaotic Neutral","Chaotic Evil"]
+        $scope.alignments = {
+            selectedAlignment: null,
+            availableAlignments: ["Lawful Good", "Lawful Neutral", "Lawful Evil", "Neutral Good", "Neutral", "Neutral Evil", "Chaotic Good", "Chaotic Neutral", "Chaotic Evil"]
         };
-        $scope.character={
-            name:null,
-            gender:null,
-            level:1,
+        $scope.character = {
+            name: null,
+            gender: null,
+            level: 1,
             attributes:
                 {
-                    "allowedMod":10,
-                    str:{score:10,mod:0,value:null},
-                    dex:{score:10,mod:0,value:null},
-                    con:{score:10,mod:0,value:null},
-                    int:{score:10,mod:0,value:null},
-                    wis:{score:10,mod:0,value:null},
-                    cha:{score:10,mod:0,value:null}
+                    "allowedMod": 10,
+                    str: {score: 10, mod: 0, value: null},
+                    dex: {score: 10, mod: 0, value: null},
+                    con: {score: 10, mod: 0, value: null},
+                    int: {score: 10, mod: 0, value: null},
+                    wis: {score: 10, mod: 0, value: null},
+                    cha: {score: 10, mod: 0, value: null}
                 }
         };
-        	$scope.setBaseAttribVals = function(){
-                        $scope.character.attributes.str.value += $scope.strScore();
-                        $scope.character.attributes.dex.value += $scope.dexScore();
-                        $scope.character.attributes.con.value += $scope.conScore();
-                        $scope.character.attributes.int.value += $scope.intScore();
-                        $scope.character.attributes.wis.value += $scope.wisScore();
-                        $scope.character.attributes.cha.value += $scope.chaScore();
-            };
+        $scope.setBaseAttribVals = function () {
+            $scope.character.attributes.str.value += $scope.strScore();
+            $scope.character.attributes.dex.value += $scope.dexScore();
+            $scope.character.attributes.con.value += $scope.conScore();
+            $scope.character.attributes.int.value += $scope.intScore();
+            $scope.character.attributes.wis.value += $scope.wisScore();
+            $scope.character.attributes.cha.value += $scope.chaScore();
+        };
 
-        $scope.strScore = function(){
+        $scope.strScore = function () {
             var score = $scope.character.attributes.str.score;
-            if($scope.races.selectedRace != null){
+            if ($scope.races.selectedRace != null) {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.str;
             }
-            if($scope.variableRaceBonusAttrib == "str"){
+            if ($scope.variableRaceBonusAttrib == "str") {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.any;
             }
             score += $scope.character.attributes.str.mod;
             return score;
         }
-        $scope.dexScore = function(){
+        $scope.dexScore = function () {
             var score = $scope.character.attributes.dex.score;
-            if($scope.races.selectedRace != null){
+            if ($scope.races.selectedRace != null) {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.dex;
             }
-            if($scope.variableRaceBonusAttrib == "dex"){
+            if ($scope.variableRaceBonusAttrib == "dex") {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.any;
             }
             score += $scope.character.attributes.dex.mod;
             return score;
         }
-        $scope.conScore = function(){
+        $scope.conScore = function () {
             var score = $scope.character.attributes.con.score;
-            if($scope.races.selectedRace != null){
+            if ($scope.races.selectedRace != null) {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.con
-             }
-            if($scope.variableRaceBonusAttrib == "con"){
+            }
+            if ($scope.variableRaceBonusAttrib == "con") {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.any;
             }
             score += $scope.character.attributes.con.mod;
             return score;
         }
-        $scope.intScore = function(){
+        $scope.intScore = function () {
             var score = $scope.character.attributes.int.score;
-            if($scope.races.selectedRace != null){
+            if ($scope.races.selectedRace != null) {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.int;
             }
-            if($scope.variableRaceBonusAttrib == "int"){
+            if ($scope.variableRaceBonusAttrib == "int") {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.any;
             }
             score += $scope.character.attributes.int.mod;
             return score;
         }
-        $scope.wisScore = function(){
+        $scope.wisScore = function () {
             var score = $scope.character.attributes.wis.score;
-            if($scope.races.selectedRace != null){
+            if ($scope.races.selectedRace != null) {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.wis;
             }
-            if($scope.variableRaceBonusAttrib == "wis"){
+            if ($scope.variableRaceBonusAttrib == "wis") {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.any;
             }
             score += $scope.character.attributes.wis.mod;
             return score;
         }
-        $scope.chaScore = function(){
+        $scope.chaScore = function () {
             var score = $scope.character.attributes.cha.score;
-            if($scope.races.selectedRace != null){
+            if ($scope.races.selectedRace != null) {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.cha;
             }
-            if($scope.variableRaceBonusAttrib == "cha"){
+            if ($scope.variableRaceBonusAttrib == "cha") {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.any;
             }
 
@@ -2244,8 +2244,8 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
         $scope.variableThemeBonus = null;
         $scope.variableClassBonus = null;
 
-        $scope.getAttribMod = function(attrib){
-            switch(attrib){
+        $scope.getAttribMod = function (attrib) {
+            switch (attrib) {
                 case 'str':
                     return $scope.calcAttribModifier($scope.strScore());
                     break;
@@ -2267,92 +2267,92 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 default:
             }
         }
-        $scope.calcAttribModifier = function(attribValue){
+        $scope.calcAttribModifier = function (attribValue) {
             var score = attribValue;
-            var mod = Math.floor((score-10)/2);
+            var mod = Math.floor((score - 10) / 2);
             return mod// (mod>=0)?mod:0;
         };
-        $scope.attribIncrease = function(attrib){
+        $scope.attribIncrease = function (attrib) {
             console.log("click to increase " + attrib);
 
-            var allowed =  $scope.character.attributes.allowedMod;
-            console.log("allowed:" + $scope.character.attributes.allowedMod );
-            var total =  $scope.character.attributes.cha.mod+
-                $scope.character.attributes.wis.mod+
-                $scope.character.attributes.int.mod+
-                $scope.character.attributes.con.mod+
-                $scope.character.attributes.dex.mod+
+            var allowed = $scope.character.attributes.allowedMod;
+            console.log("allowed:" + $scope.character.attributes.allowedMod);
+            var total = $scope.character.attributes.cha.mod +
+                $scope.character.attributes.wis.mod +
+                $scope.character.attributes.int.mod +
+                $scope.character.attributes.con.mod +
+                $scope.character.attributes.dex.mod +
                 $scope.character.attributes.str.mod;
-            console.log("total:" + total );
-            if(total >= allowed)return false;
+            console.log("total:" + total);
+            if (total >= allowed) return false;
             switch (attrib) {
                 case 'str':
-                    if($scope.strScore() >= 18)return false;
+                    if ($scope.strScore() >= 18) return false;
                     $scope.character.attributes.str.mod++;
-                    console.log("str:" + $scope.character.attributes.str.mod +"Score:" +  $scope.strScore());
+                    console.log("str:" + $scope.character.attributes.str.mod + "Score:" + $scope.strScore());
                     break;
                 case 'dex':
-                    if($scope.dexScore() >= 18)return false;
+                    if ($scope.dexScore() >= 18) return false;
                     $scope.character.attributes.dex.mod++;
                     break;
                 case 'con':
-                    if($scope.conScore() >= 18)return false;
+                    if ($scope.conScore() >= 18) return false;
                     $scope.character.attributes.con.mod++;
                     break;
                 case 'int':
-                    if($scope.intScore() >= 18)return false;
+                    if ($scope.intScore() >= 18) return false;
                     $scope.character.attributes.int.mod++;
                     break;
                 case 'wis':
-                    if($scope.wisScore() >= 18)return false;
+                    if ($scope.wisScore() >= 18) return false;
                     $scope.character.attributes.wis.mod++;
                     break;
                 case 'cha':
-                    if($scope.chaScore() >= 18)return false;
+                    if ($scope.chaScore() >= 18) return false;
                     $scope.character.attributes.cha.mod++;
                     break;
                 default:
             }
         }
-            $scope.attribDecrease = function(attrib){
-                var attribs = $scope.character.attributes;
-                var allowed =  $scope.character.attributes.allowedMod;
-                var total =  $scope.character.attributes.cha.mod +
-                    $scope.character.attributes.wis.mod +
-                    $scope.character.attributes.int.mod +
-                    $scope.character.attributes.con.mod +
-                    $scope.character.attributes.dex.mod +
-                    $scope.character.attributes.str.mod;
-                if (total <= 0) return false;
-                switch (attrib) {
-                    case 'str':
-                        if($scope.strScore() <= $scope.character.attributes.str.value)return false;
-                        $scope.character.attributes.str.mod--;
-                        break;
-                    case 'dex':
-                        if($scope.dexScore() <= $scope.character.attributes.dex.value)return false;
-                        $scope.character.attributes.dex.mod--;
-                        break;
-                    case 'con':
-                        if($scope.conScore() <= $scope.character.attributes.con.value)return false;
-                        $scope.character.attributes.con.mod--;
-                        break;
-                    case 'int':
-                        if($scope.intScore() <= $scope.character.attributes.int.value)return false;
-                        $scope.character.attributes.int.mod--;
-                        break;
-                    case 'wis':
-                        if($scope.wisScore() <= $scope.character.attributes.wis.value)return false;
-                        $scope.character.attributes.wis.mod--;
-                        break;
-                    case 'cha':
-                        if($scope.chaScore() <= $scope.character.attributes.cha.value)return false;
-                        $scope.character.attributes.cha.mod--;
-                        break;
-                    default:
-                }
+        $scope.attribDecrease = function (attrib) {
+            var attribs = $scope.character.attributes;
+            var allowed = $scope.character.attributes.allowedMod;
+            var total = $scope.character.attributes.cha.mod +
+                $scope.character.attributes.wis.mod +
+                $scope.character.attributes.int.mod +
+                $scope.character.attributes.con.mod +
+                $scope.character.attributes.dex.mod +
+                $scope.character.attributes.str.mod;
+            if (total <= 0) return false;
+            switch (attrib) {
+                case 'str':
+                    if ($scope.strScore() <= $scope.character.attributes.str.value) return false;
+                    $scope.character.attributes.str.mod--;
+                    break;
+                case 'dex':
+                    if ($scope.dexScore() <= $scope.character.attributes.dex.value) return false;
+                    $scope.character.attributes.dex.mod--;
+                    break;
+                case 'con':
+                    if ($scope.conScore() <= $scope.character.attributes.con.value) return false;
+                    $scope.character.attributes.con.mod--;
+                    break;
+                case 'int':
+                    if ($scope.intScore() <= $scope.character.attributes.int.value) return false;
+                    $scope.character.attributes.int.mod--;
+                    break;
+                case 'wis':
+                    if ($scope.wisScore() <= $scope.character.attributes.wis.value) return false;
+                    $scope.character.attributes.wis.mod--;
+                    break;
+                case 'cha':
+                    if ($scope.chaScore() <= $scope.character.attributes.cha.value) return false;
+                    $scope.character.attributes.cha.mod--;
+                    break;
+                default:
             }
-        $scope.calcSkillTotal = function(skill, attrib) {
+        }
+        $scope.calcSkillTotal = function (skill, attrib) {
             if ($scope.skillList[skill].useUntrained === false
                 && $scope.skillList[skill].ranks == 0) return "-";
             var total = 0;
@@ -2362,8 +2362,8 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
             total += $scope.calcClassSkillMod(skill);
             //Is ClassSkill and theme Based Class Skill
             if ($scope.classes.selectedClass != null && $scope.themes.selectedTheme != null) {
-            total += ($scope.classes.availableClasses[$scope.classes.selectedClass].skillModifiers[skill].classSkill
-                && $scope.themes.availableThemes[$scope.themes.selectedTheme].skillModifiers[skill].classSkill) ? 1 : 0;
+                total += ($scope.classes.availableClasses[$scope.classes.selectedClass].skillModifiers[skill].classSkill
+                    && $scope.themes.availableThemes[$scope.themes.selectedTheme].skillModifiers[skill].classSkill) ? 1 : 0;
             }
             //AttribValue
             total += $scope.getAttribMod(attrib)
@@ -2372,78 +2372,95 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
 
             return total;
         }
-        $scope.calcRacialSkillMod = function(skill){
-                return ($scope.races.selectedRace != null)
-                    ? $scope.races.availableRaces[$scope.races.selectedRace].skillModifiers[skill]:
-                    0;
+        $scope.calcRacialSkillMod = function (skill) {
+            return ($scope.races.selectedRace != null)
+                ? $scope.races.availableRaces[$scope.races.selectedRace].skillModifiers[skill] :
+                0;
 
 
         }
-        $scope.calcClassSkillMod = function(skill){
-            return ($scope.classes.selectedClass != null && $scope.classes.availableClasses[$scope.classes.selectedClass].skillModifiers[skill].classSkill && $scope.skillList[skill].ranks > 0)?3:0;
+        $scope.calcClassSkillMod = function (skill) {
+            return ($scope.classes.selectedClass != null && $scope.classes.availableClasses[$scope.classes.selectedClass].skillModifiers[skill].classSkill && $scope.skillList[skill].ranks > 0) ? 3 : 0;
         }
 
-    $scope.skillIncrease = function(skill){
-        var allowed =  ($scope.classes.availableClasses[$scope.classes.selectedClass].skillRanksPerLvl + $scope.getAttribMod("int"))*$scope.character.level;
-        var total = 0;
-        for (var x in $scope.skillList) {
-            total += x.ranks;
+        $scope.skillIncrease = function (skill) {
+            var allowed = $scope.totalSkillPoints();
+            var total = $scope.totalRanks();
+            console.log("total:" + total + " Allowed:" + allowed);
+            if (total >= allowed) return false;
+            if ($scope.skillList[skill].ranks >= $scope.character.level) return false;
+            $scope.skillList[skill].ranks++;
+            $scope.totalSkillPoints();
         }
-        console.log("total:" + total );
-        if(total >= allowed)return false;
-        $scope.skillList[skill].ranks++;
-    }
-    $scope.skillDecrease = function(skill){
-       // var allowed =  ($scope.classes.availableClasses[$scope.classes.selectedClass].skillRanksPerLvl + $scope.getAttribMod("int"))*$scope.character.level;
-        var total = 0;
-        for (var x in $scope.skillList) {
-            total += x.ranks;
+        $scope.skillDecrease = function (skill) {
+            // var allowed =  ($scope.classes.availableClasses[$scope.classes.selectedClass].skillRanksPerLvl + $scope.getAttribMod("int"))*$scope.character.level;
+            var total = 0;
+            for (var x in $scope.skillList) {
+                total += x.ranks;
+            }
+            if (total <= 0) return false;
+            $scope.skillList[skill].ranks--;
+            $scope.totalSkillPoints();
         }
-        if (total <= 0) return false;
-        $scope.skillList[skill].ranks--;
-    }
-        $scope.attribList = ["str","dex","con","int","wis","cha"];
+        $scope.totalSkillPoints = function () {
+            return ($scope.classes.availableClasses[$scope.classes.selectedClass].skillRanksPerLvl + $scope.getAttribMod("int")) * $scope.character.level;
+        }
+        $scope.totalRanks = function () {
+            var total = 0;
+            for (var x in $scope.skillList) {
+                total += $scope.skillList[x].ranks;
+            }
+            return total;
+        }
+        $scope.availSkillPoints = function () {
+            var pts = $scope.totalSkillPoints() - $scope.totalRanks();
+            return (pts > 0) ? pts : 0;
+        }
+        $scope.attribList = ["str", "dex", "con", "int", "wis", "cha"];
         $scope.skillList = {
             "acrobatics":
                 {
-                "name": "acrobatics",
-                "DisplayName": "Acrobatics",
-                "useUntrained": true,
-                "armorCheck": true,
-                "baseAttrib": "dex",
-                "ranks":0
+                    "name": "acrobatics",
+                    "DisplayName": "Acrobatics",
+                    "useUntrained": true,
+                    "armorCheck": true,
+                    "baseAttrib": "dex",
+                    "ranks": 0
                 }
-            , "athletics": {
+            , "athletics":
+                {
                 "name": "athletics",
                 "DisplayName": "Athletics",
                 "useUntrained": true,
                 "armorCheck": true,
                 "baseAttrib": "str",
-                "ranks":0
-            }
-            , "bluff": {
+                "ranks": 0
+                }
+            , "bluff":
+                {
                 "name": "bluff",
                 "DisplayName": "Bluff",
                 "useUntrained": true,
                 "armorCheck": false,
                 "baseAttrib": "cha",
-                "ranks":0
-            }
-            , "computers": {
+                "ranks": 0
+                }
+            , "computers":
+                {
                 "name": "computers",
                 "DisplayName": "Computers",
                 "useUntrained": false,
                 "armorCheck": false,
                 "baseAttrib": "int",
-                "ranks":0
-            }
+                "ranks": 0
+                }
             , "culture": {
                 "name": "culture",
                 "DisplayName": "Culture",
                 "useUntrained": false,
                 "armorCheck": false,
                 "baseAttrib": "int",
-                "ranks":0
+                "ranks": 0
             }
             , "diplomacy": {
                 "name": "diplomacy",
@@ -2451,7 +2468,7 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 "useUntrained": true,
                 "armorCheck": false,
                 "baseAttrib": "cha",
-                "ranks":0
+                "ranks": 0
             }
             , "disguise": {
                 "name": "disguise",
@@ -2459,7 +2476,7 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 "useUntrained": true,
                 "armorCheck": false,
                 "baseAttrib": "cha",
-                "ranks":0
+                "ranks": 0
             }
             , "engineering": {
                 "name": "engineering",
@@ -2467,7 +2484,7 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 "useUntrained": false,
                 "armorCheck": false,
                 "baseAttrib": "int",
-                "ranks":0
+                "ranks": 0
             }
             , "intimidate": {
                 "name": "intimidate",
@@ -2475,7 +2492,7 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 "useUntrained": true,
                 "armorCheck": false,
                 "baseAttrib": "cha",
-                "ranks":0
+                "ranks": 0
             }
             , "lifescience": {
                 "name": "lifescience",
@@ -2483,15 +2500,15 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 "useUntrained": false,
                 "armorCheck": false,
                 "baseAttrib": "int",
-                "ranks":0
+                "ranks": 0
             }
-            , "medicine":{
+            , "medicine": {
                 "name": "medicine",
                 "DisplayName": "Medicine",
                 "useUntrained": false,
                 "armorCheck": false,
                 "baseAttrib": "int",
-                "ranks":0
+                "ranks": 0
             }
             , "mysticism": {
                 "name": "mysticism",
@@ -2499,7 +2516,7 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 "useUntrained": false,
                 "armorCheck": false,
                 "baseAttrib": "wis",
-                "ranks":0
+                "ranks": 0
             }
             , "perception": {
                 "name": "perception",
@@ -2507,16 +2524,16 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 "useUntrained": true,
                 "armorCheck": false,
                 "baseAttrib": "wis",
-                "ranks":0
+                "ranks": 0
             }
             , "physicalscience":
                 {
-                "name": "physicalscience",
-                "DisplayName": "Physical Science",
-                "useUntrained": false,
-                "armorCheck": false,
-                "baseAttrib": "int",
-                    "ranks":0
+                    "name": "physicalscience",
+                    "DisplayName": "Physical Science",
+                    "useUntrained": false,
+                    "armorCheck": false,
+                    "baseAttrib": "int",
+                    "ranks": 0
                 }
             , "piloting": {
                 "name": "piloting",
@@ -2524,16 +2541,16 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 "useUntrained": true,
                 "armorCheck": false,
                 "baseAttrib": "dex",
-                "ranks":0
+                "ranks": 0
             }
             , "sensemotive":
                 {
-                "name": "sensemotive",
-                "DisplayName": "Sensemotive",
-                "useUntrained": true,
-                "armorCheck": false,
-                "baseAttrib": "wis",
-                    "ranks":0
+                    "name": "sensemotive",
+                    "DisplayName": "Sensemotive",
+                    "useUntrained": true,
+                    "armorCheck": false,
+                    "baseAttrib": "wis",
+                    "ranks": 0
                 }
             , "sleightofhand":
                 {
@@ -2542,7 +2559,7 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                     "useUntrained": false,
                     "armorCheck": true,
                     "baseAttrib": "dex",
-                    "ranks":0
+                    "ranks": 0
                 }
             , "stealth": {
                 "name": "stealth",
@@ -2550,18 +2567,18 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 "useUntrained": true,
                 "armorCheck": true,
                 "baseAttrib": "dex",
-                "ranks":0
+                "ranks": 0
             }
             , "survival":
                 {
-                "name": "survival",
-                "DisplayName": "Survival",
-                "useUntrained": true,
-                "armorCheck": false,
-                "baseAttrib": "wis",
-                    "ranks":0
+                    "name": "survival",
+                    "DisplayName": "Survival",
+                    "useUntrained": true,
+                    "armorCheck": false,
+                    "baseAttrib": "wis",
+                    "ranks": 0
                 }
         };
 
 
-});
+    });
