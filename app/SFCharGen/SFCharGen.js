@@ -2146,17 +2146,18 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
         $scope.character = {
             name: null,
             gender: null,
-            level: 1,
+            levels: [{"className":null,"classLevel":1,"attributeModifiers":{},"skillPoints":null}],
             attributes:
                 {
                     "allowedMod": 10,
-                    str: {score: 10, mod: 0, value: null},
-                    dex: {score: 10, mod: 0, value: null},
-                    con: {score: 10, mod: 0, value: null},
-                    int: {score: 10, mod: 0, value: null},
-                    wis: {score: 10, mod: 0, value: null},
-                    cha: {score: 10, mod: 0, value: null}
-                }
+                    "str": {"baseScore": 10, mod: 0, value: null},
+                    "dex": {"baseScore": 10, mod: 0, value: null},
+                    "con": {"baseScore": 10, mod: 0, value: null},
+                    "int": {"baseScore": 10, mod: 0, value: null},
+                    "wis": {"baseScore": 10, mod: 0, value: null},
+                    "cha": {"baseScore": 10, mod: 0, value: null}
+                },
+            "skillRanks":{}
         };
         $scope.setBaseAttribVals = function () {
             $scope.character.attributes.str.value += $scope.strScore();
@@ -2168,7 +2169,7 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
         };
 
         $scope.strScore = function () {
-            var score = $scope.character.attributes.str.score;
+            var score = $scope.character.attributes.str.baseScore;
             if ($scope.races.selectedRace != null) {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.str;
             }
@@ -2179,7 +2180,7 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
             return score;
         }
         $scope.dexScore = function () {
-            var score = $scope.character.attributes.dex.score;
+            var score = $scope.character.attributes.dex.baseScore;
             if ($scope.races.selectedRace != null) {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.dex;
             }
@@ -2190,7 +2191,7 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
             return score;
         }
         $scope.conScore = function () {
-            var score = $scope.character.attributes.con.score;
+            var score = $scope.character.attributes.con.baseScore;
             if ($scope.races.selectedRace != null) {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.con
             }
@@ -2201,7 +2202,7 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
             return score;
         }
         $scope.intScore = function () {
-            var score = $scope.character.attributes.int.score;
+            var score = $scope.character.attributes.int.baseScore;
             if ($scope.races.selectedRace != null) {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.int;
             }
@@ -2212,7 +2213,7 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
             return score;
         }
         $scope.wisScore = function () {
-            var score = $scope.character.attributes.wis.score;
+            var score = $scope.character.attributes.wis.baseScore;
             if ($scope.races.selectedRace != null) {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.wis;
             }
@@ -2223,7 +2224,7 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
             return score;
         }
         $scope.chaScore = function () {
-            var score = $scope.character.attributes.cha.score;
+            var score = $scope.character.attributes.cha.baseScore;
             if ($scope.races.selectedRace != null) {
                 score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.cha;
             }
