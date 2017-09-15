@@ -88,7 +88,7 @@ div.elementTitle{
   width:100%
 }
 div.element * {width:100%;}
-.attribBlock{ padding: 10px; border: 1px solid #5a5a5a;margin:-11px 40px 0px 15px;}
+.attribBlock{ padding: 10px; border: 1px solid #5a5a5a;margin:-11px 40px 0px 15px;    max-width: 90%;}
 
 .attribBlock .labels,.attribBlock .attrib{color: #5a5a5a; font-size: 10px; display:flex;}
 .attribBlock .labels div, .attribBlock .attrib div{
@@ -99,7 +99,8 @@ div.element * {width:100%;}
 .attribBlock .attrib>div{border:1px solid #d2d2d2;margin: 2px; position: relative;text-align: center;}
 .attribBlock .attrib div span{position:absolute; left: 3px;top: 3px; font-size:8px; color: #d2d2d2;}
 .skillsBlock{ padding: 10px;}
-.skillsBlock .labels,.skillsBlock .skill{color: #5a5a5a; font-size: 10px; display:flex; border-bottom:#b3d4fc 1px dashed;}
+.struct .labels,.struct .data{color: #5a5a5a; font-size: 10px; display:flex; }
+.skillsBlock .labels,.skillsBlock .data{color: #5a5a5a; font-size: 10px; display:flex; border-bottom:#b3d4fc 1px dashed;}
 
 .skillName{width:250px;font-size:12px;}
 .untrained,.classSkill,.armorcheck{width:10px;margin-right:2px;}
