@@ -26,6 +26,36 @@ directive('charGenSkillsBlock', function() {
         templateUrl : 'SFCharGen/skillsBlock.html'
     }
 }).
+directive('charGenInitiativeBlock', function() {
+    return {
+        templateUrl : 'SFCharGen/initiativeBlock.html'
+    }
+}).
+directive('charGenHealthAndResolveBlock', function() {
+    return {
+        templateUrl : 'SFCharGen/healthandresolveBlock.html'
+    }
+}).
+directive('charGenArmorClassBlock', function() {
+    return {
+        templateUrl : 'SFCharGen/armorclassBlock.html'
+    }
+}).
+directive('charGenSavingThrowsBlock', function() {
+    return {
+        templateUrl : 'SFCharGen/savingthrowsBlock.html'
+    }
+}).
+directive('charGenAttackBonusBlock', function() {
+    return {
+        templateUrl : 'SFCharGen/attackBonusBlock.html'
+    }
+}).
+directive('charGenWeaponsBlock', function() {
+    return {
+        templateUrl : 'SFCharGen/weaponsBlock.html'
+    }
+}).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
