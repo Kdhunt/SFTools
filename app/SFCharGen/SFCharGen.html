@@ -26,7 +26,7 @@
             </div>
             <div>
                 <div class="element">
-                    <select id=""  ng-model="classes.selectedClass">
+                    <select id=""  ng-model="character.levels[0].selectedClass">
                         <option value=""></option>
                         <option  ng-repeat="x in classes.availableClasses" value="{{x.name}}">{{x.name}}</option>
                     </select>
@@ -70,16 +70,18 @@
         <div class="row x3">
             <div>
                 <div class="element">
-                    <select id="">
+                    <select id="" ng-model="character.alignment">
                         <option value=""></option>
-
+                        <option ng-repeat="x in alignments" value="{{x}}">{{x}}</option>
                     </select>
                 </div>
                 <div class="elementTitle">Alignment</div>
             </div>
             <div>
                 <div class="element">
+                    <select >
 
+                    </select>
                 </div>
                 <div class="elementTitle">Diety</div>
             </div>

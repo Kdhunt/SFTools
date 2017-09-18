@@ -12,16 +12,17 @@
         <div class="miscSkillMod">misc mod</div>
     </div>
     <div class="data" ng-repeat="x in skillList">
-        <div class="classSkill" ><span ng-show="classes.availableClasses[classes.selectedClass].skillModifiers[x.name].classSkill"><div class="csSquare"></div></span></div>
+        <div class="classSkill" ><span ng-show="classes.availableClasses[character.levels[0].selectedClass].skillModifiers[x.name].classSkill">
+            <div class="csSquare"></div></span></div>
         <div class="untrained"><span ng-hide="x.useUntrained">&#1007;</span></div>
         <div class="armorcheck" ><span ng-hide="!x.armorCheck">*</span></div>
         <div class="skillName">{{x.DisplayName}}({{x.baseAttrib}})</div>
         <div class="total">{{calcSkillTotal(x.name, x.baseAttrib)}}</div>
-        <div class="ranks" ng-model="x.ranks">
+        <div class="ranks">
             <div class="skillRanks">
                 <div class="raise" ng-click="skillIncrease(x.name)"></div>
                 <div class="lower" ng-click="skillDecrease(x.name)"></div>
-            </div>{{x.ranks}}</div>
+            </div>{{getSkillRank(x.name)}}</div>
         <div class="classBonus">{{calcClassSkillMod(x.name)}}</div>
         <div class="abilityMod"><span>=</span>{{getAttribMod(x.baseAttrib)}}</div>
         <div class="miscSkillMod">{{calcRacialSkillMod(x.name)}}</div>

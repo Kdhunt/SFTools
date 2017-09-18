@@ -69,7 +69,7 @@ div{display:inline-block; width:100%; border-collapse:collapse; box-sizing:borde
 .row.x3>div{width:30%;}
 .row.x3>div .element{width:100%;}
 .row.x4>div{width:25%;}
-.row.x4>div element{width:100%;}
+.row.x4>div .element{width:100%;}
 div.element{
   border-bottom: 1px solid #5a5a5a;
   font-size: 10px;
@@ -105,7 +105,7 @@ div.element * {width:100%;}
 .skillName{width:250px;font-size:12px;}
 .untrained,.classSkill,.armorcheck{width:10px;margin-right:2px;}
 .total,.ranks,.classBonus,.abilityMod,.miscSkillMod{width:60px; margin: 2.5px; padding:3px; border: 1px dotted #d2d2d2;text-align:center;}
-.ranks{width:80px;}
+.ranks{width:80px;position:relative;}
 /*.untrained>span,.armorcheck>span {display:none;}*/
 .footnote{font-size: 8px;}
 
@@ -128,8 +128,9 @@ div.element * {width:100%;}
   }
 }
 .attribVals,.skillRanks{position: absolute;
-  left: 0px;
-  line-height:8px; }
+  left: -7px;
+  line-height:8px;
+  max-width:14px;}
 .raise {
   width: 0;
   height: 0;

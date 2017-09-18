@@ -6,8 +6,8 @@
         <div class="miscMod">Misc Modifier</div>
     </div>
     <div class="data">
-        <div class="initTotal">Total</div>
-        <div class="dexMod">Dex Modifier</div>
-        <div class="miscMod">Misc Modifier</div>
+        <div class="initTotal">{{calcInitiativeTotal()}}</div>
+        <div class="dexMod">{{getAttribMod("dex")}}</div>
+        <div class="miscMod">{{getMiscInitMods()}}</div>
     </div>
 </div>

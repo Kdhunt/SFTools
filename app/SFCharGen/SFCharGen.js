@@ -697,7 +697,8 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                             "mod": 0,
                             "classSkill": false
                         }
-                    }
+                    },
+                    "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
                 },
                 "Bounty Hunter": {
                     "name": "Bounty Hunter",
@@ -778,7 +779,8 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                             "mod": 0,
                             "classSkill": false
                         }
-                    }
+                    },
+                    "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
                 },
                 "Icon": {
                     "name": "Icon",
@@ -859,7 +861,8 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                             "mod": 0,
                             "classSkill": false
                         }
-                    }
+                    },
+                    "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
                 },
                 "Mercenary": {
                     "name": "Mercenary",
@@ -940,7 +943,8 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                             "mod": 0,
                             "classSkill": false
                         }
-                    }
+                    },
+                    "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
                 },
                 "Outlaw": {
                     "name": "Outlaw",
@@ -1021,7 +1025,8 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                             "mod": 0,
                             "classSkill": false
                         }
-                    }
+                    },
+                    "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
                 },
                 "Priest": {
                     "name": "Priest",
@@ -1102,7 +1107,8 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                             "mod": 0,
                             "classSkill": false
                         }
-                    }
+                    },
+                    "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
                 },
                 "Scholar": {
                     "name": "Scholar",
@@ -1183,7 +1189,8 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                             "mod": 0,
                             "classSkill": false
                         }
-                    }
+                    },
+                    "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
                 },
                 "Spacefarer": {
                     "name": "Spacefarer",
@@ -1226,7 +1233,7 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                         },
                         "lifescience": {
                             "mod": 0,
-                            "classSkill": false
+                            "classSkill": true
                         },
                         "medicine": {
                             "mod": 0,
@@ -1264,7 +1271,8 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                             "mod": 0,
                             "classSkill": false
                         }
-                    }
+                    },
+                    "attributeMods":{"str":0,"dex":0,"con":1,"int":0,"wis":0,"cha":0}
                 },
                 "Xenoseeker": {
                     "name": "Xenoseeker",
@@ -1345,7 +1353,8 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                             "mod": 0,
                             "classSkill": false
                         }
-                    }
+                    },
+                    "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
                 },
                 "Themeless": {
                     "name": "Themeless",
@@ -1430,7 +1439,8 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                             "mod": 0,
                             "classSkill": false
                         }
-                    }
+                    },
+                    "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
                 }
             }
         };
@@ -2139,15 +2149,29 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                 }
             }
         };
-        $scope.alignments = {
-            selectedAlignment: null,
-            availableAlignments: ["Lawful Good", "Lawful Neutral", "Lawful Evil", "Neutral Good", "Neutral", "Neutral Evil", "Chaotic Good", "Chaotic Neutral", "Chaotic Evil"]
-        };
-        $scope.character = {
-            name: null,
-            gender: null,
-            levels: [{"className":null,"classLevel":1,"attributeModifiers":{},"skillPoints":null}],
-            attributes:
+        $scope.alignments = [
+            "Lawful Good",
+            "Lawful Neutral",
+            "Lawful Evil",
+            "Neutral Good",
+            "Neutral",
+            "Neutral Evil",
+            "Chaotic Good",
+            "Chaotic Neutral",
+            "Chaotic Evil"
+        ];
+        $scope.character = {//character.levels[0].selectedClass
+            "name": null,
+            "gender": null,
+            "race":null,
+            "theme":null,
+            "alignment":null,
+            "deity":null,
+            "levels":
+                [
+                    {0:{"selectedClass": null, "classLevel": 1, "attributeModifiers": {}, "skillPoints": null}}
+                ],
+            "attributes":
                 {
                     "allowedMod": 10,
                     "str": {"baseScore": 10, mod: 0, value: null},
@@ -2157,7 +2181,84 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                     "wis": {"baseScore": 10, mod: 0, value: null},
                     "cha": {"baseScore": 10, mod: 0, value: null}
                 },
-            "skillRanks":{}
+            "skillRanks": {
+                "acrobatics":
+                    {
+                        "ranks": 0
+                    }
+                , "athletics":
+                    {
+                        "ranks": 0
+                    }
+                , "bluff":
+                    {
+                        "ranks": 0
+                    }
+                , "computers":
+                    {
+                        "ranks": 0
+                    }
+                , "culture":
+                    {
+                        "ranks": 0
+                    }
+                , "diplomacy":
+                    {
+                        "ranks": 0
+                    }
+                , "disguise":
+                    {
+                        "ranks": 0
+                    }
+                , "engineering":
+                    {
+                        "ranks": 0
+                    }
+                , "intimidate":
+                    {
+                        "ranks": 0
+                    }
+                , "lifescience":
+                    {
+                        "ranks": 0
+                    }
+                , "medicine":
+                    {
+                        "ranks": 0
+                    }
+                , "mysticism":
+                    {
+                        "ranks": 0
+                    }
+                , "perception":
+                    {
+                        "ranks": 0
+                    }
+                , "physicalscience":
+                    {
+                        "ranks": 0
+                    }
+                , "piloting":
+                    {
+                        "ranks": 0
+                    }
+                , "sensemotive":
+                    {
+                        "ranks": 0
+                    }
+                , "sleightofhand":
+                    {
+                        "ranks": 0
+                    }
+                , "stealth":
+                    {
+                        "ranks": 0
+                    }
+                , "survival":
+                    {
+                        "ranks": 0
+                    }
+            }
         };
         $scope.setBaseAttribVals = function () {
             $scope.character.attributes.str.value += $scope.strScore();
@@ -2355,15 +2456,15 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
         }
         $scope.calcSkillTotal = function (skill, attrib) {
             if ($scope.skillList[skill].useUntrained === false
-                && $scope.skillList[skill].ranks == 0) return "-";
+                && $scope.character.skillRanks[skill].ranks == 0) return "-";
             var total = 0;
             //Ranks
-            total += $scope.skillList[skill].ranks;
+            total += $scope.character.skillRanks[skill].ranks;
             //ClassBonus
             total += $scope.calcClassSkillMod(skill);
             //Is ClassSkill and theme Based Class Skill
-            if ($scope.classes.selectedClass != null && $scope.themes.selectedTheme != null) {
-                total += ($scope.classes.availableClasses[$scope.classes.selectedClass].skillModifiers[skill].classSkill
+            if ($scope.character.levels[0].selectedClass != null && $scope.themes.selectedTheme != null) {
+                total += ($scope.classes.availableClasses[$scope.character.levels[$scope.currentLevel()].selectedClass].skillModifiers[skill].classSkill
                     && $scope.themes.availableThemes[$scope.themes.selectedTheme].skillModifiers[skill].classSkill) ? 1 : 0;
             }
             //AttribValue
@@ -2381,41 +2482,76 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
 
         }
         $scope.calcClassSkillMod = function (skill) {
-            return ($scope.classes.selectedClass != null && $scope.classes.availableClasses[$scope.classes.selectedClass].skillModifiers[skill].classSkill && $scope.skillList[skill].ranks > 0) ? 3 : 0;
+            return ($scope.character.levels[$scope.currentLevel()].selectedClass != null
+                && $scope.classes.availableClasses[$scope.character.levels[$scope.currentLevel()].selectedClass].skillModifiers[skill].classSkill
+                && $scope.character.skillRanks[skill].ranks > 0) ? 3 : 0;
         }
-
+        $scope.currentLevel = function(){
+            return $scope.character.levels.length -1;
+        }
         $scope.skillIncrease = function (skill) {
             var allowed = $scope.totalSkillPoints();
             var total = $scope.totalRanks();
             console.log("total:" + total + " Allowed:" + allowed);
             if (total >= allowed) return false;
-            if ($scope.skillList[skill].ranks >= $scope.character.level) return false;
-            $scope.skillList[skill].ranks++;
+            if ($scope.character.skillRanks[skill].ranks >= $scope.character.level) return false;
+            $scope.character.skillRanks[skill].ranks++;
             $scope.totalSkillPoints();
         }
         $scope.skillDecrease = function (skill) {
-            // var allowed =  ($scope.classes.availableClasses[$scope.classes.selectedClass].skillRanksPerLvl + $scope.getAttribMod("int"))*$scope.character.level;
+            // var allowed =  ( + $scope.getAttribMod("int"))*$scope.character.level;
             var total = 0;
-            for (var x in $scope.skillList) {
+            for (var x in $scope.character.skillRanks) {
                 total += x.ranks;
             }
             if (total <= 0) return false;
-            $scope.skillList[skill].ranks--;
+            $scope.character.skillRanks[skill].ranks--;
             $scope.totalSkillPoints();
         }
+        $scope.getSkillRank = function(skill){
+            console.log(skill);
+            return ($scope.character.skillRanks[skill].ranks)?$scope.character.skillRanks[skill].ranks:0;
+        }
+        $scope.getSkillRanksPerLevel = function(level){
+            if(!level) {
+                var level = $scope.currentLevel();
+            }
+           return $scope.classes[level].skillRanksPerLvl;
+        }
+
         $scope.totalSkillPoints = function () {
-            return ($scope.classes.availableClasses[$scope.classes.selectedClass].skillRanksPerLvl + $scope.getAttribMod("int")) * $scope.character.level;
+            var total = 0;
+            var levelCount = $scope.currentLevel();
+            for(var i=0;i<=levelCount;i++) {
+                if ($scope.character.levels[$scope.currentLevel()].selectedClass != null) {
+                    total += $scope.classes.availableClasses[$scope.character.levels[$scope.currentLevel()].selectedClass].skillRanksPerLvl
+                        + $scope.getAttribMod("int");
+                }
+            }
+            return total ;
         }
         $scope.totalRanks = function () {
             var total = 0;
             for (var x in $scope.skillList) {
-                total += $scope.skillList[x].ranks;
+                total += $scope.character.skillRanks[x].ranks;
             }
             return total;
         }
         $scope.availSkillPoints = function () {
             var pts = $scope.totalSkillPoints() - $scope.totalRanks();
             return (pts > 0) ? pts : 0;
+        }
+        //INITIATIVE
+        $scope.getMiscInitMods = function(){
+            var total = 0;
+
+            return total;
+        }
+        $scope.calcInitiativeTotal = function(){
+            var total = 0;
+            total += $scope.getAttribMod("dex");
+            total += $scope.getMiscInitMods();
+            return total;
         }
         $scope.attribList = ["str", "dex", "con", "int", "wis", "cha"];
         $scope.skillList = {
@@ -2425,107 +2561,94 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                     "DisplayName": "Acrobatics",
                     "useUntrained": true,
                     "armorCheck": true,
-                    "baseAttrib": "dex",
-                    "ranks": 0
+                    "baseAttrib": "dex"
                 }
             , "athletics":
                 {
-                "name": "athletics",
-                "DisplayName": "Athletics",
-                "useUntrained": true,
-                "armorCheck": true,
-                "baseAttrib": "str",
-                "ranks": 0
+                    "name": "athletics",
+                    "DisplayName": "Athletics",
+                    "useUntrained": true,
+                    "armorCheck": true,
+                    "baseAttrib": "str"
                 }
             , "bluff":
                 {
-                "name": "bluff",
-                "DisplayName": "Bluff",
-                "useUntrained": true,
-                "armorCheck": false,
-                "baseAttrib": "cha",
-                "ranks": 0
+                    "name": "bluff",
+                    "DisplayName": "Bluff",
+                    "useUntrained": true,
+                    "armorCheck": false,
+                    "baseAttrib": "cha"
                 }
             , "computers":
                 {
-                "name": "computers",
-                "DisplayName": "Computers",
-                "useUntrained": false,
-                "armorCheck": false,
-                "baseAttrib": "int",
-                "ranks": 0
+                    "name": "computers",
+                    "DisplayName": "Computers",
+                    "useUntrained": false,
+                    "armorCheck": false,
+                    "baseAttrib": "int"
                 }
             , "culture": {
                 "name": "culture",
                 "DisplayName": "Culture",
                 "useUntrained": false,
                 "armorCheck": false,
-                "baseAttrib": "int",
-                "ranks": 0
+                "baseAttrib": "int"
             }
             , "diplomacy": {
                 "name": "diplomacy",
                 "DisplayName": "Diplomacy",
                 "useUntrained": true,
                 "armorCheck": false,
-                "baseAttrib": "cha",
-                "ranks": 0
+                "baseAttrib": "cha"
             }
             , "disguise": {
                 "name": "disguise",
                 "DisplayName": "Disguise",
                 "useUntrained": true,
                 "armorCheck": false,
-                "baseAttrib": "cha",
-                "ranks": 0
+                "baseAttrib": "cha"
             }
             , "engineering": {
                 "name": "engineering",
                 "DisplayName": "Engineering",
                 "useUntrained": false,
                 "armorCheck": false,
-                "baseAttrib": "int",
-                "ranks": 0
+                "baseAttrib": "int"
             }
             , "intimidate": {
                 "name": "intimidate",
                 "DisplayName": "Intimidate",
                 "useUntrained": true,
                 "armorCheck": false,
-                "baseAttrib": "cha",
-                "ranks": 0
+                "baseAttrib": "cha"
             }
             , "lifescience": {
                 "name": "lifescience",
                 "DisplayName": "Life Science",
                 "useUntrained": false,
                 "armorCheck": false,
-                "baseAttrib": "int",
-                "ranks": 0
+                "baseAttrib": "int"
             }
             , "medicine": {
                 "name": "medicine",
                 "DisplayName": "Medicine",
                 "useUntrained": false,
                 "armorCheck": false,
-                "baseAttrib": "int",
-                "ranks": 0
+                "baseAttrib": "int"
             }
             , "mysticism": {
                 "name": "mysticism",
                 "DisplayName": "Mysticism",
                 "useUntrained": false,
                 "armorCheck": false,
-                "baseAttrib": "wis",
-                "ranks": 0
+                "baseAttrib": "wis"
             }
             , "perception": {
                 "name": "perception",
                 "DisplayName": "Perception",
                 "useUntrained": true,
                 "armorCheck": false,
-                "baseAttrib": "wis",
-                "ranks": 0
+                "baseAttrib": "wis"
             }
             , "physicalscience":
                 {
@@ -2533,16 +2656,14 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                     "DisplayName": "Physical Science",
                     "useUntrained": false,
                     "armorCheck": false,
-                    "baseAttrib": "int",
-                    "ranks": 0
+                    "baseAttrib": "int"
                 }
             , "piloting": {
                 "name": "piloting",
                 "DisplayName": "Piloting",
                 "useUntrained": true,
                 "armorCheck": false,
-                "baseAttrib": "dex",
-                "ranks": 0
+                "baseAttrib": "dex"
             }
             , "sensemotive":
                 {
@@ -2550,8 +2671,7 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                     "DisplayName": "Sensemotive",
                     "useUntrained": true,
                     "armorCheck": false,
-                    "baseAttrib": "wis",
-                    "ranks": 0
+                    "baseAttrib": "wis"
                 }
             , "sleightofhand":
                 {
@@ -2559,26 +2679,23 @@ angular.module('StarfinderApp.SFCharGen', ['ngRoute'])
                     "DisplayName": "Sleight of Hand",
                     "useUntrained": false,
                     "armorCheck": true,
-                    "baseAttrib": "dex",
-                    "ranks": 0
+                    "baseAttrib": "dex"
                 }
             , "stealth": {
                 "name": "stealth",
                 "DisplayName": "Stealth",
                 "useUntrained": true,
                 "armorCheck": true,
-                "baseAttrib": "dex",
-                "ranks": 0
+                "baseAttrib": "dex"
             }
             , "survival":
-                {
-                    "name": "survival",
-                    "DisplayName": "Survival",
-                    "useUntrained": true,
-                    "armorCheck": false,
-                    "baseAttrib": "wis",
-                    "ranks": 0
-                }
+            {
+                "name": "survival",
+                "DisplayName": "Survival",
+                "useUntrained": true,
+                "armorCheck": false,
+                "baseAttrib": "wis"
+            }
         };
 
 
