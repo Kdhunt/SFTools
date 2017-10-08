@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('StarfinderApp.SFShipGen', ['ngRoute'])
+angular.module('myApp.SFShipGen', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/SFShipGen', {

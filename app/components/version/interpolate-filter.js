@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('StarfinderApp.version.interpolate-filter', [])
+angular.module('myApp.version.interpolate-filter', [])
 
 .filter('interpolate', ['version', function(version) {
   return function(text) {

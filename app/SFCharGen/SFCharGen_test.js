@@ -1,8 +1,8 @@
 'use strict';
 
-describe('StarfinderApp.SFCharGen module', function() {
+describe('myApp.SFCharGen module', function() {
 
-  beforeEach(module('StarfinderApp.SFCharGen'));
+  beforeEach(module('myApp.SFCharGen'));
 
   describe('SFCharGen controller', function(){
 

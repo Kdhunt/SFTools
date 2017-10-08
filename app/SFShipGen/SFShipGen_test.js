@@ -1,8 +1,8 @@
 'use strict';
 
-describe('StarfinderApp.SFShipGen module', function() {
+describe('myApp.SFShipGen module', function() {
 
-  beforeEach(module('StarfinderApp.SFShipGen'));
+  beforeEach(module('myApp.SFShipGen'));
 
   describe('SFShipGen controller', function(){
 

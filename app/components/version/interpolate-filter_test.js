@@ -1,7 +1,7 @@
 'use strict';
 
-describe('StarfinderApp.version module', function() {
-  beforeEach(module('StarfinderApp.version'));
+describe('myApp.version module', function() {
+  beforeEach(module('myApp.version'));
 
   describe('interpolate filter', function() {
     beforeEach(module(function($provide) {

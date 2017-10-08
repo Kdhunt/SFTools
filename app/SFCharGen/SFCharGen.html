@@ -8,7 +8,7 @@
 
             <div>
                 <div class="element">
-                    <select id="" ng-model="races.selectedRace" ng-change="setBaseAttribVals()">
+                    <select id="w1" ng-model="races.selectedRace" ng-change="setBaseAttribVals()">
                         <option value=""></option>
                         <option  ng-repeat="x in races.availableRaces" value="{{x.name}}">{{x.name}}</option>
                     </select>
@@ -17,7 +17,7 @@
             </div>
             <div>
                 <div class="element">
-                    <select id="" ng-model="themes.selectedTheme">
+                    <select id="w2" ng-model="themes.selectedTheme">
                         <option value=""></option>
                         <option  ng-repeat="x in themes.availableThemes" value="{{x.name}}">{{x.name}}</option>
                     </select>
@@ -26,7 +26,7 @@
             </div>
             <div>
                 <div class="element">
-                    <select id=""  ng-model="character.levels[0].selectedClass">
+                    <select id="w3"  ng-model="character.levels[0].selectedClass">
                         <option value=""></option>
                         <option  ng-repeat="x in classes.availableClasses" value="{{x.name}}">{{x.name}}</option>
                     </select>
@@ -44,14 +44,14 @@
             </div>
             <div>
                 <div class="element">
-
+                    {{character.baseSpeed}}
                 </div>
                 <div class="elementTitle">Speed</div>
             </div>
             <div>
                 <div class="element">
 
-                    <select id=""  ng-model="character.gender">
+                    <select id="w4"  ng-model="character.gender">
                         <option value=""></option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
@@ -62,7 +62,10 @@
             </div>
             <div>
                 <div class="element">
-
+                    <select id="w4"  ng-model="character.homeworld">
+                        <option value=""></option>
+                        <option ng-repeat="x in homeworlds" value="{{x}}">{{x}}</option>
+                    </select>
                 </div>
                 <div class="elementTitle">Homeworld</div>
             </div>
@@ -70,7 +73,7 @@
         <div class="row x3">
             <div>
                 <div class="element">
-                    <select id="" ng-model="character.alignment">
+                    <select id="w5" ng-model="character.alignment">
                         <option value=""></option>
                         <option ng-repeat="x in alignments" value="{{x}}">{{x}}</option>
                     </select>
@@ -79,8 +82,9 @@
             </div>
             <div>
                 <div class="element">
-                    <select >
-
+                    <select id="w5" ng-model="character.diety">
+                        <option value=""></option>
+                        <option ng-repeat="x in dieties" value="{{x.name}}">{{x.name}}</option>
                     </select>
                 </div>
                 <div class="elementTitle">Diety</div>
@@ -97,7 +101,7 @@
             <div><h4>Description</h4></div>
             <div>
                 <div class="element">
-                    The {{character.gender}} {{races.availableRaces[races.selectedRace].name}} {{classes.selectedClass}} known as {{character.name}} with a dex of {{races.availableRaces[races.selectedRace].attributeModifiers.dex}}
+                    The {{character.alignment}} {{character.gender}} {{races.availableRaces[races.selectedRace].name}} {{classes.availableClasses[character.levels[0].selectedClass].name}} {{themes.availableThemes[themes.selectedTheme].name}} known as {{character.name}} with a dex of {{races.availableRaces[races.selectedRace].attributeModifiers.dex}}
                 </div>
             </div>
         </div>
