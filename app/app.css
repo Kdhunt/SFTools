@@ -1,0 +1,152 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+body{width:100vw; background-color:#fff;height: 100vh;padding:0px; margin:0px;font-family:Arial; box-sizing:border-box;}
+#body{background-color: #ffffff; text-align:center; border-right: 15px #001839 solid; border-top:10px #001839 solid;border-right: 10px #001839 solid; height:100vh;width:100vw;}
+h1{
+  text-transform: uppercase;
+  color: #F0F0F0;
+  font-size: 2.2vw;
+  text-align: center;
+  font-weight: 200;
+  margin: 0vw 1vw 1vw;
+  display: block;
+  padding: 1.5vw 10px;
+  background-image: url(../images/h1_background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+h4{
+  text-transform: uppercase;
+  color: #F0F0F0;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 200;
+  margin: 5px 20px 10px 0px;;
+  display: block;
+  padding: 7px 125px 7px 30px;
+  background-image: url(../images/H4.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 114px;
+}
+div#charsheet{width:100%; align:left;}
+div.row{    display: flex;
+  width: 100%;
+  text-align: left;
+  padding: 0px 3vw;
+}
+div{display:inline-block; width:100%; border-collapse:collapse; box-sizing:border-box;}
+.row>div {display:block; flex-direction:row;    margin: 0 5px 0 0;}
+.row.x1>div{width:100%;}
+.row.x1>div .element{width:100%;}
+.row.x2>div{width:50%;}
+.row.x2>div .element{width:100%;}
+.row.x3>div{width:30%;}
+.row.x3>div .element{width:100%;}
+.row.x4>div{width:25%;}
+.row.x4>div .element{width:100%;}
+div.element{
+  border-bottom: 1px solid #5a5a5a;
+  font-size: 10px;
+  text-transform:uppercase;
+  display:block;
+  width:90%;
+  min-height: 10px;
+  min-width:85%;
+  margin: 10px 20px 0px 0px;
+}
+div.elementTitle{
+  color: #5a5a5a;
+  font-size: 10px;
+  text-transform:uppercase;
+  display:block;
+  width:100%
+}
+div.element * {width:100%;}
+.attribBlock{ padding: 10px; border: 1px solid #5a5a5a;margin:-11px 40px 0px 15px;    max-width: 90%;}
+
+.attribBlock .labels,.attribBlock .attrib{color: #5a5a5a; font-size: 10px; display:flex;}
+.attribBlock .labels div, .attribBlock .attrib div{
+  display:inline-block; width:20%; height: 18px;color: #5a5a5a;
+  font-size: 12px;
+  text-transform:uppercase; flex-direction:row;}
+.attribBlock .labels div{font-size: 8px; text-align:center; vertical-align:bottom;}
+.attribBlock .attrib>div{border:1px solid #d2d2d2;margin: 2px; position: relative;text-align: center;}
+.attribBlock .attrib div span{position:absolute; left: 3px;top: 3px; font-size:8px; color: #d2d2d2;}
+.skillsBlock{ padding: 10px;}
+.struct .labels,.struct .data{color: #5a5a5a; font-size: 10px; display:flex; }
+.skillsBlock .labels,.skillsBlock .data{color: #5a5a5a; font-size: 10px; display:flex; border-bottom:#b3d4fc 1px dashed;}
+
+.skillName{width:250px;font-size:12px;}
+.untrained,.classSkill,.armorcheck{width:10px;margin-right:2px;}
+.total,.ranks,.classBonus,.abilityMod,.miscSkillMod{width:60px; margin: 2.5px; padding:3px; border: 1px dotted #d2d2d2;text-align:center;}
+.ranks{width:80px;position:relative;}
+/*.untrained>span,.armorcheck>span {display:none;}*/
+.footnote{font-size: 8px;}
+
+#footer{text-align:center;margin: 20px auto;
+  font-size: 8px; position: fixed; bottom: 10px; width: 100%;}
+@media(max-width: 380px){
+  h1{
+    text-transform: uppercase;
+    color: #F0F0F0;
+    font-size: 12px;
+    text-align: left;
+    font-weight: 200;
+    margin: 20px;
+    display: block;
+    padding: 7px 125px 7px 30px;
+    background-image: url(../images/H4.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.attribVals,.skillRanks{position: absolute;
+  left: -7px;
+  line-height:8px;
+  max-width:14px;}
+.raise {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid black;
+  max-height:7px;
+}
+
+.lower {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #000;
+  max-height:7px;
+}
+.csSquare{height:8px; width:8px; background-color: #b3d4fc;}
+.ng-invalid{color:red;}

@@ -1,0 +1,123 @@
+<div id="body">
+    <h1>Starfinder Character generation utility</h1>
+    <div id="charsheet" >
+        <p class="footnote">This Utility uses the character generation flow as laid out in the Starfinder Core Rulebook </p>
+        <div class="row"><div><h4>Character name</h4></div><div> <input type="text" id="charName" name="charName" ng-model="character.name" /></div>
+        </div>
+        <div class="row x3">
+
+            <div>
+                <div class="element">
+                    <select id="w1" ng-model="races.selectedRace" ng-change="setBaseAttribVals()">
+                        <option value=""></option>
+                        <option  ng-repeat="x in races.availableRaces" value="{{x.name}}">{{x.name}}</option>
+                    </select>
+                </div>
+                <div class="elementTitle">Race</div>
+            </div>
+            <div>
+                <div class="element">
+                    <select id="w2" ng-model="themes.selectedTheme">
+                        <option value=""></option>
+                        <option  ng-repeat="x in themes.availableThemes" value="{{x.name}}">{{x.name}}</option>
+                    </select>
+                </div>
+                <div class="elementTitle">Theme</div>
+            </div>
+            <div>
+                <div class="element">
+                    <select id="w3"  ng-model="character.levels[0].selectedClass">
+                        <option value=""></option>
+                        <option  ng-repeat="x in classes.availableClasses" value="{{x.name}}">{{x.name}}</option>
+                    </select>
+
+                </div>
+                <div class="elementTitle">Class</div>
+            </div>
+        </div>
+        <div class="row x4">
+            <div>
+                <div class="element">
+                    {{races.availableRaces[races.selectedRace].size}}
+                </div>
+                <div class="elementTitle">Size</div>
+            </div>
+            <div>
+                <div class="element">
+                    {{character.baseSpeed}}
+                </div>
+                <div class="elementTitle">Speed</div>
+            </div>
+            <div>
+                <div class="element">
+
+                    <select id="w4"  ng-model="character.gender">
+                        <option value=""></option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Both">Both</option>
+                    </select>
+                </div>
+                <div class="elementTitle">Gender</div>
+            </div>
+            <div>
+                <div class="element">
+                    <select id="w4"  ng-model="character.homeworld">
+                        <option value=""></option>
+                        <option ng-repeat="x in homeworlds" value="{{x}}">{{x}}</option>
+                    </select>
+                </div>
+                <div class="elementTitle">Homeworld</div>
+            </div>
+        </div>
+        <div class="row x3">
+            <div>
+                <div class="element">
+                    <select id="w5" ng-model="character.alignment">
+                        <option value=""></option>
+                        <option ng-repeat="x in alignments" value="{{x}}">{{x}}</option>
+                    </select>
+                </div>
+                <div class="elementTitle">Alignment</div>
+            </div>
+            <div>
+                <div class="element">
+                    <select id="w5" ng-model="character.diety">
+                        <option value=""></option>
+                        <option ng-repeat="x in dieties" value="{{x.name}}">{{x.name}}</option>
+                    </select>
+                </div>
+                <div class="elementTitle">Diety</div>
+            </div>
+            <div>
+                <div class="element">
+
+                </div>
+                <div class="elementTitle">Player</div>
+            </div>
+
+        </div>
+        <div class="row x1">
+            <div><h4>Description</h4></div>
+            <div>
+                <div class="element">
+                    The {{character.alignment}} {{character.gender}} {{races.availableRaces[races.selectedRace].name}} {{classes.availableClasses[character.levels[0].selectedClass].name}} {{themes.availableThemes[themes.selectedTheme].name}} known as {{character.name}} with a dex of {{races.availableRaces[races.selectedRace].attributeModifiers.dex}}
+                </div>
+            </div>
+        </div>
+        <div class="row x2">
+            <div>
+                <char-gen-attributes-block></char-gen-attributes-block>
+                <char-gen-skills-block></char-gen-skills-block>
+
+            </div>
+            <div>
+                <char-gen-initiative-block></char-gen-initiative-block>
+                <char-gen-health-and-resolve-block></char-gen-health-and-resolve-block>
+                <char-gen-armor-class-block></char-gen-armor-class-block>
+                <char-gen-saving-throws-block></char-gen-saving-throws-block>
+                <char-gen-attack-bonus-block></char-gen-attack-bonus-block>
+                <char-gen-weapons-block></char-gen-weapons-block>
+            </div>
+</div>
+    </div></div>
