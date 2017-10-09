@@ -2493,7 +2493,7 @@ angular.module('myApp.SFCharGen', ['ngRoute'])
         $scope.skillIncrease = function (skill) {
             var allowed = $scope.totalSkillPoints();
             var total = $scope.totalRanks();
-            console.log("total:" + total + " Allowed:" + allowed);
+            //console.log("total:" + total + " Allowed:" + allowed);
             if (total >= allowed) return false;
             if ($scope.character.skillRanks[skill].ranks >= $scope.character.level) return false;
             $scope.character.skillRanks[skill].ranks++;
@@ -2556,36 +2556,44 @@ angular.module('myApp.SFCharGen', ['ngRoute'])
            "The Pact Worlds: The Diaspora","The Pact Worlds: Eox","The Pact Worlds: Triaxus","The Pact Worlds: Liavara",
            "The Pact Worlds: Bretheda","The Pact Worlds: Apostae","The Pact Worlds: Aucturn"];
        $scope.dieties = {
-            "Hylax":{"name":"Hylax","alignment":"NG","realms":""},
-            "Imodae":{"name":"Imodae","alignment":"NG","realms":""},
-            "Sarenrae":{"name":"Sarenrae","alignment":"NG","realms":""},
-           "Yaraesa":{"name":"Yaraesa","alignment":"NG","realms":""},
-           "Desna":{"name":"Desna","alignment":"NG","realms":""},
-           "Weydan":{"name":"Weydan","alignment":"NG","realms":""},
-           "Abadar":{"name":"Abadar","alignment":"NG","realms":""},
-           "Talavet":{"name":"Talavet","alignment":"NG","realms":""},
-           "Eloritu":{"name":"Eloritu","alignment":"NG","realms":""},
-           "Ibra":{"name":"Ibra","alignment":"NG","realms":""},
-           "Pharasma":{"name":"Pharasma","alignment":"NG","realms":""},
-           "Triune":{"name":"Triune","alignment":"NG","realms":""},
-           "Besmara":{"name":"Besmara","alignment":"NG","realms":""},
-           "Oras":{"name":"Oras","alignment":"NG","realms":""},
-           "Damoritosh":{"name":"Damoritosh","alignment":"NG","realms":""},
-           "Zon-Kuthon":{"name":"Zon-Kuthon","alignment":"NG","realms":""},
-           "Lau Shu Po":{"name":"Lau Shu Po","alignment":"NG","realms":""},
-           "Urgathoa":{"name":"Urgathoa","alignment":"NG","realms":""},
-           "The Devourer":{"name":"The Devourer","alignment":"NG","realms":""},
-           "Nyarlathotep":{"name":"Nyarlathotep","alignment":"NG","realms":""},
-           "Angrado":{"name":"Angrado","alignment":"NG","realms":""},
-           "Arshea":{"name":"Arshea","alignment":"NG","realms":""},
-           "Asmodeus":{"name":"Asmodeus","alignment":"NG","realms":""},
-           "Black Butterfly":{"name":"Black Butterfly","alignment":"NG","realms":""},
-           "Calistria":{"name":"Calistria","alignment":"NG","realms":""},
-           "Eldest":{"name":"Eldest","alignment":"NG","realms":""},
-           "Groetus":{"name":"Groetus","alignment":"NG","realms":""},
-           "Lamashtu":{"name":"Lamashtu","alignment":"NG","realms":""},
-           "Lissala":{"name":"Lissala","alignment":"NG","realms":""},
-           "Azathoth":{"The Demon Sultan Azathoth":"Lissala","alignment":"NG","realms":""}
+            "Hylax":{"name":"Hylax","alignment":"LG","realms":"diplomacy, first contact, friendship, peace"},
+            "Imodae":{"name":"Imodae","alignment":"LG","realms":"honorable battle, humanity, justice, valor"},
+            "Sarenrae":{"name":"Sarenrae","alignment":"NG","realms":"healing, redemption, the sun"},
+           "Yaraesa":{"name":"Yaraesa","alignment":"NG","realms":"kmowledge, mental perfection, scholarship, science"},
+           "Desna":{"name":"Desna","alignment":"CG","realms":"dreams, luck, stars, travelers"},
+           "Weydan":{"name":"Weydan","alignment":"CG","realms":"discovery, equality, exploration, freedom"},
+           "Abadar":{"name":"Abadar","alignment":"LN","realms":"civilization, commerce, law, wealth"},
+           "Talavet":{"name":"Talavet","alignment":"LN","realms":"community, tradition, self-reliance"},
+           "Eloritu":{"name":"Eloritu","alignment":"N","realms":"history, magic, secrets"},
+           "Ibra":{"name":"Ibra","alignment":"N","realms":"celestial bodies, the cosmos, mysteries of the universe"},
+           "Pharasma":{"name":"Pharasma","alignment":"N","realms":"birth, death, fate, prophecy"},
+           "Triune":{"name":"Triune","alignment":"N","realms":"artificial intelligence, computers, the Drift"},
+           "Besmara":{"name":"Besmara","alignment":"CN","realms":"piracy, space monsters, strife"},
+           "Oras":{"name":"Oras","alignment":"CN","realms":"adaptation, evolution, natural selection"},
+           "Damoritosh":{"name":"Damoritosh","alignment":"LE","realms":"conquest, duty, war"},
+           "Zon-Kuthon":{"name":"Zon-Kuthon","alignment":"LE","realms":"darkness, envy, loss, pain"},
+           "Lau Shu Po":{"name":"Lau Shu Po","alignment":"NE","realms":"assassins, rats, spies, theives"},
+           "Urgathoa":{"name":"Urgathoa","alignment":"NE","realms":"disease, gluttony, undeath"},
+           "The Devourer":{"name":"The Devourer","alignment":"CE","realms":"black holes, destruction, supernovas"},
+           "Nyarlathotep":{"name":"Nyarlathotep","alignment":"CE","realms":"conspiracies, dangerous secrets, forbidden magic"},
+           "Angrado":{"name":"Angrado","alignment":"LG","realms":"dwarves, fire, tradition, war"},
+           "Arshea":{"name":"Arshea","alignment":"NG","realms":"freedom, physical beauty, sexuality"},
+           "Asmodeus":{"name":"Asmodeus","alignment":"LE","realms":"contracts, pride, slavery, tyranny"},
+           "Black Butterfly":{"name":"Black Butterfly","alignment":"CG","realms":"distance, silence, space"},
+           "Calistria":{"name":"Calistria","alignment":"CN","realms":"elves, lust, revenge, trickery"},
+           "Eldest":{"name":"Eldest","alignment":"N","realms":"Rulers of the First World"},
+           "Groetus":{"name":"Groetus","alignment":"CN","realms":"empty places, oblivion, ruins"},
+           "Lamashtu":{"name":"Lamashtu","alignment":"CE","realms":"madness, monsters, nightmares"},
+           "Lissala":{"name":"Lissala","alignment":"LE","realms":"duty, fate, obedience, reward of service"},
+           "Azathoth":{"name":"Outer God: The Demon Sultan Azathoth","alignment":"CN","realms":"entropy, madness, mindless destruction"},
+           "Shub-Niggurath":{"name":"Outer God: Shub-Niggurath","alignment":"CE","realms":"fertility, forests, monsters"},
+           "Yog-Sothoth":{"name":"Outer God: Yog-Sothoth","alignment":"CN","realms":"gates, space, time"},
+           "The Cycle":{"name":"Philosophy:The Cycle","alignment":null,"realms":null},
+           "The Green Faith":{"name":"Philosophy:The Green Faith","alignment":null,"realms":null},
+           "The Prophecies of Kalistrade":{"name":"Philosophy:The Prophecies of Kalistrade","alignment":null,"realms":null},
+           "Sangpotshi":{"name":"Philosophy:Sangpotshi","alignment":null,"realms":null},
+           "Singularitism":{"name":"Philosophy:Singularitism","alignment":null,"realms":null},
+           "The Song of Silence":{"name":"Philosophy:The Song of Silence","alignment":null,"realms":null}
        };
         $scope.skillList = {
             "acrobatics":
