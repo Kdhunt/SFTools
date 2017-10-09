@@ -1,0 +1,31 @@
+<div class="row x3">
+
+    <div>
+        <div class="element">
+            <select id="w1" ng-model="races.selectedRace" ng-change="setBaseAttribVals()">
+                <option value=""></option>
+                <option  ng-repeat="x in races.availableRaces" value="{{x.name}}">{{x.name}}</option>
+            </select>
+        </div>
+        <div class="elementTitle">Race</div>
+    </div>
+    <div>
+        <div class="element">
+            <select id="w2" ng-model="themes.selectedTheme">
+                <option value=""></option>
+                <option  ng-repeat="x in themes.availableThemes" value="{{x.name}}">{{x.name}}</option>
+            </select>
+        </div>
+        <div class="elementTitle">Theme</div>
+    </div>
+    <div>
+        <div class="element">
+            <select id="w3"  ng-model="character.levels[0].selectedClass">
+                <option value=""></option>
+                <option  ng-repeat="x in classes.availableClasses" value="{{x.name}}">{{x.name}}</option>
+            </select>
+
+        </div>
+        <div class="elementTitle">Class</div>
+    </div>
+</div>

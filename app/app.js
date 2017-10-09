@@ -20,42 +20,62 @@ directive("variableRaceBonus", function() {
 }).
 directive('charGenAttributesBlock', function() {
     return {
-        templateUrl : 'SFCharGen/attribBlock.html'
+        templateUrl : 'SFCharGen/components/attribBlock.html'
     }
 }).
 directive('charGenSkillsBlock', function() {
     return {
-        templateUrl : 'SFCharGen/skillsBlock.html'
+        templateUrl : 'SFCharGen/components/skillsBlock.html'
     }
 }).
 directive('charGenInitiativeBlock', function() {
     return {
-        templateUrl : 'SFCharGen/initiativeBlock.html'
+        templateUrl : 'SFCharGen/components/initiativeBlock.html'
     }
 }).
 directive('charGenHealthAndResolveBlock', function() {
     return {
-        templateUrl : 'SFCharGen/healthandresolveBlock.html'
+        templateUrl : 'SFCharGen/components/healthandresolveBlock.html'
     }
 }).
 directive('charGenArmorClassBlock', function() {
     return {
-        templateUrl : 'SFCharGen/armorclassBlock.html'
+        templateUrl : 'SFCharGen/components/armorclassBlock.html'
     }
 }).
 directive('charGenSavingThrowsBlock', function() {
     return {
-        templateUrl : 'SFCharGen/savingthrowsBlock.html'
+        templateUrl : 'SFCharGen/components/savingthrowsBlock.html'
     }
 }).
 directive('charGenAttackBonusBlock', function() {
     return {
-        templateUrl : 'SFCharGen/attackBonusBlock.html'
+        templateUrl : 'SFCharGen/components/attackBonusBlock.html'
     }
 }).
 directive('charGenWeaponsBlock', function() {
     return {
-        templateUrl : 'SFCharGen/weaponsBlock.html'
+        templateUrl : 'SFCharGen/components/weaponsBlock.html'
+    }
+}).
+directive('charGenUpperBlock1', function() {
+    return {
+        templateUrl : 'SFCharGen/components/upperBlock1.html'
+    }
+}).
+directive('charGenUpperBlock2', function() {
+    return {
+        templateUrl : 'SFCharGen/components/upperBlock2.html'
+    }
+}).
+directive('charGenUpperBlock3', function() {
+    return {
+        templateUrl : 'SFCharGen/components/upperBlock3.html'
+    }
+}).
+directive('charGenDescriptionBlock', function() {
+    return {
+        templateUrl : 'SFCharGen/components/descriptionBlock.html'
     }
 }).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

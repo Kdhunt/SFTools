@@ -1,0 +1,26 @@
+<div class="row x3">
+    <div>
+        <div class="element">
+            <select id="w5" ng-model="character.alignment">
+                <option value=""></option>
+                <option ng-repeat="x in alignments" value="{{x}}">{{x}}</option>
+            </select>
+        </div>
+        <div class="elementTitle">Alignment</div>
+    </div>
+    <div>
+        <div class="element">
+            <select id="w5" ng-model="character.diety">
+                <option value=""></option>
+                <option ng-repeat="x in dieties" value="{{x.name}}">{{x.name}}</option>
+            </select>
+        </div>
+        <div class="elementTitle">Diety</div>
+    </div>
+    <div>
+        <div class="element">
+
+        </div>
+        <div class="elementTitle">Player</div>
+    </div>
+</div>

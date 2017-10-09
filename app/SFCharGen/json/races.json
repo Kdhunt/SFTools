@@ -1,0 +1,605 @@
+{
+  "selectedRace": null,
+  "availableRaces": {
+    "Android": {
+      "name": "Android",
+      "raceIndex": 0,
+      "attributeModifiers": {
+        "str": 0,
+        "dex": 2,
+        "con": 0,
+        "int": 2,
+        "wis": 0,
+        "cha": -2,
+        "any": 0
+      },
+      "hp": 4,
+      "size": "Medium",
+      "types": [
+        {
+          "main": "Humanoid",
+          "sub": "Android",
+          "typeAttributeModifiers": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0,
+            "any": 0
+          }
+        }
+      ],
+      "heightRange": [
+        5,
+        7
+      ],
+      "weightRange": [
+        100,
+        200
+      ],
+      "matureAge": 0,
+      "maxAge": 200,
+      "savingThrowModifiers": {
+        "fortitude": 0,
+        "reflex": 0,
+        "will": 0,
+        "special": "+2 to saving throws against disease, mind-affecting effects, poison and sleep unless the effects specifically target constructs"
+      },
+      "abilities": [
+        "doesn't breathe",
+        "not affected by vacuum",
+        "low-light vision (dim as if day)",
+        "dark vision (60ft black&white)",
+        "+2 to DC for sense motive against an Android",
+        "single light armor upgrade slot (internal, does not require wearing armor)"
+      ],
+      "skillModifiers": {
+        "acrobatics": 0,
+        "athletics": 0,
+        "bluff": 0,
+        "computers": 0,
+        "culture": 0,
+        "diplomacy": 0,
+        "disguise": 0,
+        "engineering": 0,
+        "intimidate": 0,
+        "lifescience": 0,
+        "medicine": 0,
+        "mysticism": 0,
+        "perception": 0,
+        "physicalscience": 0,
+        "piloting": 0,
+        "sensemotive": -2,
+        "sleightofhand": 0,
+        "stealth": 0,
+        "survival": 0
+      }
+    },
+    "Human": {
+      "name": "Human",
+      "raceIndex": 1,
+      "attributeModifiers": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "wis": 0,
+        "cha": 0,
+        "any": 2
+      },
+      "hp": 4,
+      "size": "Medium",
+      "types": [
+        {
+          "main": "Humanoid",
+          "sub": "Human",
+          "typeAttributeModifiers": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0,
+            "any": 0
+          }
+        }
+      ],
+      "heightRange": [
+        5,
+        7
+      ],
+      "weightRange": [
+        100,
+        200
+      ],
+      "matureAge": 0,
+      "maxAge": 200,
+      "savingThrowModifiers": {
+        "fortitude": 0,
+        "reflex": 0,
+        "will": 0,
+        "special": "+2 to saving throws against disease, mind-affecting effects, poison and sleep unless the effects specifically target constructs"
+      },
+      "abilities": [
+        "doesn't breathe",
+        "not affected by vacuum",
+        "low-light vision (dim as if day)",
+        "dark vision (60ft black&white)",
+        "+2 to DC for sense motive against an Android",
+        "single light armor upgrade slot (internal, does not require wearing armor)"
+      ],
+      "skillModifiers": {
+        "acrobatics": 0,
+        "athletics": 0,
+        "bluff": 0,
+        "computers": 0,
+        "culture": 0,
+        "diplomacy": 0,
+        "disguise": 0,
+        "engineering": 0,
+        "intimidate": 0,
+        "lifescience": 0,
+        "medicine": 0,
+        "mysticism": 0,
+        "perception": 0,
+        "physicalscience": 0,
+        "piloting": 0,
+        "sensemotive": -2,
+        "sleightofhand": 0,
+        "stealth": 0,
+        "survival": 0
+      }
+    },
+    "Kasatha": {
+      "name": "Kasatha",
+      "raceIndex": 2,
+      "attributeModifiers": {
+        "str": 2,
+        "dex": 0,
+        "con": 0,
+        "int": -2,
+        "wis": 2,
+        "cha": 0,
+        "any": 0
+      },
+      "hp": 4,
+      "size": "Medium",
+      "types": [
+        {
+          "main": "Humanoid",
+          "sub": "Kasatha",
+          "typeAttributeModifiers": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0,
+            "any": 0
+          }
+        }
+      ],
+      "heightRange": [
+        5,
+        7
+      ],
+      "weightRange": [
+        100,
+        200
+      ],
+      "matureAge": 0,
+      "maxAge": 200,
+      "savingThrowModifiers": {
+        "fortitude": 0,
+        "reflex": 0,
+        "will": 0,
+        "special": "+2 to saving throws against disease, mind-affecting effects, poison and sleep unless the effects specifically target constructs"
+      },
+      "abilities": [
+        "doesn't breathe",
+        "not affected by vacuum",
+        "low-light vision (dim as if day)",
+        "dark vision (60ft black&white)",
+        "+2 to DC for sense motive against an Android",
+        "single light armor upgrade slot (internal, does not require wearing armor)"
+      ],
+      "skillModifiers": {
+        "acrobatics": 0,
+        "athletics": 0,
+        "bluff": 0,
+        "computers": 0,
+        "culture": 0,
+        "diplomacy": 0,
+        "disguise": 0,
+        "engineering": 0,
+        "intimidate": 0,
+        "lifescience": 0,
+        "medicine": 0,
+        "mysticism": 0,
+        "perception": 0,
+        "physicalscience": 0,
+        "piloting": 0,
+        "sensemotive": -2,
+        "sleightofhand": 0,
+        "stealth": 0,
+        "survival": 0
+      }
+    },
+    "Lashunta (Korasha)": {
+      "name": "Lashunta (Korasha)",
+      "raceIndex": 3,
+      "attributeModifiers": {
+        "str": 2,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "wis": -2,
+        "cha": 2,
+        "any": 0
+      },
+      "hp": 4,
+      "size": "Medium",
+      "types": [
+        {
+          "main": "Humanoid",
+          "sub": "Lashunta",
+          "typeAttributeModifiers": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0,
+            "any": 0
+          }
+        }
+      ],
+      "heightRange": [
+        5,
+        7
+      ],
+      "weightRange": [
+        100,
+        200
+      ],
+      "matureAge": 0,
+      "maxAge": 200,
+      "savingThrowModifiers": {
+        "fortitude": 0,
+        "reflex": 0,
+        "will": 0,
+        "special": "+2 to saving throws against disease, mind-affecting effects, poison and sleep unless the effects specifically target constructs"
+      },
+      "abilities": [
+        "doesn't breathe",
+        "not affected by vacuum",
+        "low-light vision (dim as if day)",
+        "dark vision (60ft black&white)",
+        "+2 to DC for sense motive against an Android",
+        "single light armor upgrade slot (internal, does not require wearing armor)"
+      ],
+      "skillModifiers": {
+        "acrobatics": 0,
+        "athletics": 0,
+        "bluff": 0,
+        "computers": 0,
+        "culture": 0,
+        "diplomacy": 0,
+        "disguise": 0,
+        "engineering": 0,
+        "intimidate": 0,
+        "lifescience": 0,
+        "medicine": 0,
+        "mysticism": 0,
+        "perception": 0,
+        "physicalscience": 0,
+        "piloting": 0,
+        "sensemotive": -2,
+        "sleightofhand": 0,
+        "stealth": 0,
+        "survival": 0
+      }
+    },
+    "Lashunta (Damaya)": {
+      "name": "Lashunta (Damaya)",
+      "raceIndex": 3,
+      "attributeModifiers": {
+        "str": 0,
+        "dex": 0,
+        "con": -2,
+        "int": 2,
+        "wis": 0,
+        "cha": 2,
+        "any": 0
+      },
+      "hp": 4,
+      "size": "Medium",
+      "types": [
+        {
+          "main": "Humanoid",
+          "sub": "Lashunta",
+          "typeAttributeModifiers": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0,
+            "any": 0
+          }
+        }
+      ],
+      "heightRange": [
+        5,
+        7
+      ],
+      "weightRange": [
+        100,
+        200
+      ],
+      "matureAge": 0,
+      "maxAge": 200,
+      "savingThrowModifiers": {
+        "fortitude": 0,
+        "reflex": 0,
+        "will": 0,
+        "special": "+2 to saving throws against disease, mind-affecting effects, poison and sleep unless the effects specifically target constructs"
+      },
+      "abilities": [
+        "doesn't breathe",
+        "not affected by vacuum",
+        "low-light vision (dim as if day)",
+        "dark vision (60ft black&white)",
+        "+2 to DC for sense motive against an Android",
+        "single light armor upgrade slot (internal, does not require wearing armor)"
+      ],
+      "skillModifiers": {
+        "acrobatics": 0,
+        "athletics": 0,
+        "bluff": 0,
+        "computers": 0,
+        "culture": 0,
+        "diplomacy": 0,
+        "disguise": 0,
+        "engineering": 0,
+        "intimidate": 0,
+        "lifescience": 0,
+        "medicine": 0,
+        "mysticism": 0,
+        "perception": 0,
+        "physicalscience": 0,
+        "piloting": 0,
+        "sensemotive": -2,
+        "sleightofhand": 0,
+        "stealth": 0,
+        "survival": 0
+      }
+    },
+    "Shirren": {
+      "name": "Shirren",
+      "raceIndex": 4,
+      "attributeModifiers": {
+        "str": 0,
+        "dex": 0,
+        "con": 2,
+        "int": 0,
+        "wis": 2,
+        "cha": -2,
+        "any": 0
+      },
+      "hp": 6,
+      "size": "Medium",
+      "types": [
+        {
+          "main": "Humanoid",
+          "sub": "Shirren",
+          "typeAttributeModifiers": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0,
+            "any": 0
+          }
+        }
+      ],
+      "heightRange": [
+        5,
+        7
+      ],
+      "weightRange": [
+        100,
+        200
+      ],
+      "matureAge": 0,
+      "maxAge": 200,
+      "savingThrowModifiers": {
+        "fortitude": 0,
+        "reflex": 0,
+        "will": 0,
+        "special": "+2 to saving throws against disease, mind-affecting effects, poison and sleep unless the effects specifically target constructs"
+      },
+      "abilities": [
+        "doesn't breathe",
+        "not affected by vacuum",
+        "low-light vision (dim as if day)",
+        "dark vision (60ft black&white)",
+        "+2 to DC for sense motive against an Android",
+        "single light armor upgrade slot (internal, does not require wearing armor)"
+      ],
+      "skillModifiers": {
+        "acrobatics": 0,
+        "athletics": 0,
+        "bluff": 0,
+        "computers": 0,
+        "culture": 0,
+        "diplomacy": 0,
+        "disguise": 0,
+        "engineering": 0,
+        "intimidate": 0,
+        "lifescience": 0,
+        "medicine": 0,
+        "mysticism": 0,
+        "perception": 0,
+        "physicalscience": 0,
+        "piloting": 0,
+        "sensemotive": -2,
+        "sleightofhand": 0,
+        "stealth": 0,
+        "survival": 0
+      }
+    },
+    "Vesk": {
+      "name": "Vesk",
+      "raceIndex": 5,
+      "attributeModifiers": {
+        "str": 2,
+        "dex": 0,
+        "con": 2,
+        "int": -2,
+        "wis": 0,
+        "cha": 0,
+        "any": 0
+      },
+      "hp": 6,
+      "size": "Medium",
+      "types": [
+        {
+          "main": "Humanoid",
+          "sub": "Vesk",
+          "typeAttributeModifiers": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0,
+            "any": 0
+          }
+        }
+      ],
+      "heightRange": [
+        5,
+        7
+      ],
+      "weightRange": [
+        100,
+        200
+      ],
+      "matureAge": 0,
+      "maxAge": 200,
+      "savingThrowModifiers": {
+        "fortitude": 0,
+        "reflex": 0,
+        "will": 0,
+        "special": "+2 to saving throws against disease, mind-affecting effects, poison and sleep unless the effects specifically target constructs"
+      },
+      "abilities": [
+        "doesn't breathe",
+        "not affected by vacuum",
+        "low-light vision (dim as if day)",
+        "dark vision (60ft black&white)",
+        "+2 to DC for sense motive against an Android",
+        "single light armor upgrade slot (internal, does not require wearing armor)"
+      ],
+      "skillModifiers": {
+        "acrobatics": 0,
+        "athletics": 0,
+        "bluff": 0,
+        "computers": 0,
+        "culture": 0,
+        "diplomacy": 0,
+        "disguise": 0,
+        "engineering": 0,
+        "intimidate": 0,
+        "lifescience": 0,
+        "medicine": 0,
+        "mysticism": 0,
+        "perception": 0,
+        "physicalscience": 0,
+        "piloting": 0,
+        "sensemotive": -2,
+        "sleightofhand": 0,
+        "stealth": 0,
+        "survival": 0
+      }
+    },
+    "Ysoki": {
+      "name": "Ysoki",
+      "raceIndex": 6,
+      "attributeModifiers": {
+        "str": -2,
+        "dex": 2,
+        "con": 0,
+        "int": 2,
+        "wis": 0,
+        "cha": 0,
+        "any": 0
+      },
+      "hp": 2,
+      "size": "small",
+      "types": [
+        {
+          "main": "Humanoid",
+          "sub": "Ysoki",
+          "typeAttributeModifiers": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0,
+            "any": 0
+          }
+        }
+      ],
+      "heightRange": [
+        5,
+        7
+      ],
+      "weightRange": [
+        100,
+        200
+      ],
+      "matureAge": 0,
+      "maxAge": 200,
+      "savingThrowModifiers": {
+        "fortitude": 0,
+        "reflex": 0,
+        "will": 0,
+        "special": "+2 to saving throws against disease, mind-affecting effects, poison and sleep unless the effects specifically target constructs"
+      },
+      "abilities": [
+        "doesn't breathe",
+        "not affected by vacuum",
+        "low-light vision (dim as if day)",
+        "dark vision (60ft black&white)",
+        "+2 to DC for sense motive against an Android",
+        "single light armor upgrade slot (internal, does not require wearing armor)"
+      ],
+      "skillModifiers": {
+        "acrobatics": 0,
+        "athletics": 0,
+        "bluff": 0,
+        "computers": 0,
+        "culture": 0,
+        "diplomacy": 0,
+        "disguise": 0,
+        "engineering": 2,
+        "intimidate": 0,
+        "lifescience": 0,
+        "medicine": 0,
+        "mysticism": 0,
+        "perception": 0,
+        "physicalscience": 0,
+        "piloting": 0,
+        "sensemotive": 0,
+        "sleightofhand": 0,
+        "stealth": 2,
+        "survival": 2
+      }
+    }
+  }
+}

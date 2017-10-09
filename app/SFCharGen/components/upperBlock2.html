@@ -1,0 +1,35 @@
+<div class="row x4">
+    <div>
+        <div class="element">
+            {{races.availableRaces[races.selectedRace].size}}
+        </div>
+        <div class="elementTitle">Size</div>
+    </div>
+    <div>
+        <div class="element">
+            {{character.baseSpeed}}
+        </div>
+        <div class="elementTitle">Speed</div>
+    </div>
+    <div>
+        <div class="element">
+
+            <select id="w4"  ng-model="character.gender">
+                <option value=""></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Both">Both</option>
+            </select>
+        </div>
+        <div class="elementTitle">Gender</div>
+    </div>
+    <div>
+        <div class="element">
+            <select id="w4"  ng-model="character.homeworld">
+                <option value=""></option>
+                <option ng-repeat="x in homeworlds" value="{{x}}">{{x}}</option>
+            </select>
+        </div>
+        <div class="elementTitle">Homeworld</div>
+    </div>
+</div>

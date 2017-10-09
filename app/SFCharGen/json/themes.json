@@ -1,0 +1,829 @@
+{
+  "selectedTheme": null,
+  "availableThemes": {
+    "Ace Pilot": {
+      "name": "Ace Pilot",
+      "skillModifiers": {
+        "acrobatics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "athletics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "bluff": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "computers": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "culture": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "diplomacy": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "disguise": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "engineering": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "intimidate": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "lifescience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "medicine": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "mysticism": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "perception": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "physicalscience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "piloting": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sensemotive": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sleightofhand": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "stealth": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "survival": {
+          "mod": 0,
+          "classSkill": false
+        }
+      },
+      "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
+    },
+    "Bounty Hunter": {
+      "name": "Bounty Hunter",
+      "skillModifiers": {
+        "acrobatics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "athletics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "bluff": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "computers": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "culture": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "diplomacy": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "disguise": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "engineering": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "intimidate": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "lifescience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "medicine": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "mysticism": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "perception": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "physicalscience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "piloting": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sensemotive": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sleightofhand": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "stealth": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "survival": {
+          "mod": 0,
+          "classSkill": false
+        }
+      },
+      "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
+    },
+    "Icon": {
+      "name": "Icon",
+      "skillModifiers": {
+        "acrobatics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "athletics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "bluff": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "computers": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "culture": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "diplomacy": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "disguise": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "engineering": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "intimidate": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "lifescience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "medicine": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "mysticism": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "perception": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "physicalscience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "piloting": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sensemotive": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sleightofhand": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "stealth": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "survival": {
+          "mod": 0,
+          "classSkill": false
+        }
+      },
+      "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
+    },
+    "Mercenary": {
+      "name": "Mercenary",
+      "skillModifiers": {
+        "acrobatics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "athletics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "bluff": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "computers": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "culture": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "diplomacy": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "disguise": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "engineering": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "intimidate": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "lifescience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "medicine": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "mysticism": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "perception": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "physicalscience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "piloting": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sensemotive": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sleightofhand": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "stealth": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "survival": {
+          "mod": 0,
+          "classSkill": false
+        }
+      },
+      "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
+    },
+    "Outlaw": {
+      "name": "Outlaw",
+      "skillModifiers": {
+        "acrobatics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "athletics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "bluff": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "computers": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "culture": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "diplomacy": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "disguise": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "engineering": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "intimidate": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "lifescience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "medicine": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "mysticism": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "perception": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "physicalscience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "piloting": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sensemotive": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sleightofhand": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "stealth": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "survival": {
+          "mod": 0,
+          "classSkill": false
+        }
+      },
+      "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
+    },
+    "Priest": {
+      "name": "Priest",
+      "skillModifiers": {
+        "acrobatics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "athletics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "bluff": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "computers": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "culture": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "diplomacy": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "disguise": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "engineering": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "intimidate": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "lifescience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "medicine": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "mysticism": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "perception": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "physicalscience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "piloting": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sensemotive": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sleightofhand": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "stealth": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "survival": {
+          "mod": 0,
+          "classSkill": false
+        }
+      },
+      "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
+    },
+    "Scholar": {
+      "name": "Scholar",
+      "skillModifiers": {
+        "acrobatics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "athletics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "bluff": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "computers": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "culture": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "diplomacy": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "disguise": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "engineering": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "intimidate": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "lifescience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "medicine": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "mysticism": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "perception": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "physicalscience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "piloting": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sensemotive": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sleightofhand": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "stealth": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "survival": {
+          "mod": 0,
+          "classSkill": false
+        }
+      },
+      "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
+    },
+    "Spacefarer": {
+      "name": "Spacefarer",
+      "skillModifiers": {
+        "acrobatics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "athletics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "bluff": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "computers": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "culture": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "diplomacy": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "disguise": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "engineering": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "intimidate": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "lifescience": {
+          "mod": 0,
+          "classSkill": true
+        },
+        "medicine": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "mysticism": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "perception": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "physicalscience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "piloting": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sensemotive": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sleightofhand": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "stealth": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "survival": {
+          "mod": 0,
+          "classSkill": false
+        }
+      },
+      "attributeMods":{"str":0,"dex":0,"con":1,"int":0,"wis":0,"cha":0}
+    },
+    "Xenoseeker": {
+      "name": "Xenoseeker",
+      "skillModifiers": {
+        "acrobatics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "athletics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "bluff": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "computers": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "culture": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "diplomacy": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "disguise": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "engineering": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "intimidate": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "lifescience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "medicine": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "mysticism": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "perception": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "physicalscience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "piloting": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sensemotive": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sleightofhand": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "stealth": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "survival": {
+          "mod": 0,
+          "classSkill": false
+        }
+      },
+      "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
+    },
+    "Themeless": {
+      "name": "Themeless",
+      "skillModifiers": {
+        "acrobatics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "athletics": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "bluff": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "computers": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "culture": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "diplomacy": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "disguise": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "engineering": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "intimidate": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "lifescience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "medicine": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "mysticism": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "perception": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "physicalscience": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "piloting": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sensemotive": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "sleightofhand": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "stealth": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "survival": {
+          "mod": 0,
+          "classSkill": false
+        },
+        "any": {
+          "mod": 0,
+          "classSkill": false
+        }
+      },
+      "attributeMods":{"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0}
+    }
+  }
+}

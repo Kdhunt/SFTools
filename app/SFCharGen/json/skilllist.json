@@ -1,0 +1,143 @@
+{
+  "acrobatics":
+  {
+    "name": "acrobatics",
+    "DisplayName": "Acrobatics",
+    "useUntrained": true,
+    "armorCheck": true,
+    "baseAttrib": "dex"
+  }
+, "athletics":
+{
+  "name": "athletics",
+  "DisplayName": "Athletics",
+  "useUntrained": true,
+  "armorCheck": true,
+  "baseAttrib": "str"
+}
+, "bluff":
+{
+  "name": "bluff",
+  "DisplayName": "Bluff",
+  "useUntrained": true,
+  "armorCheck": false,
+  "baseAttrib": "cha"
+}
+, "computers":
+{
+  "name": "computers",
+  "DisplayName": "Computers",
+  "useUntrained": false,
+  "armorCheck": false,
+  "baseAttrib": "int"
+}
+, "culture": {
+  "name": "culture",
+  "DisplayName": "Culture",
+  "useUntrained": false,
+  "armorCheck": false,
+  "baseAttrib": "int"
+}
+, "diplomacy": {
+  "name": "diplomacy",
+  "DisplayName": "Diplomacy",
+  "useUntrained": true,
+  "armorCheck": false,
+  "baseAttrib": "cha"
+}
+, "disguise": {
+  "name": "disguise",
+  "DisplayName": "Disguise",
+  "useUntrained": true,
+  "armorCheck": false,
+  "baseAttrib": "cha"
+}
+, "engineering": {
+  "name": "engineering",
+  "DisplayName": "Engineering",
+  "useUntrained": false,
+  "armorCheck": false,
+  "baseAttrib": "int"
+}
+, "intimidate": {
+  "name": "intimidate",
+  "DisplayName": "Intimidate",
+  "useUntrained": true,
+  "armorCheck": false,
+  "baseAttrib": "cha"
+}
+, "lifescience": {
+  "name": "lifescience",
+  "DisplayName": "Life Science",
+  "useUntrained": false,
+  "armorCheck": false,
+  "baseAttrib": "int"
+}
+, "medicine": {
+  "name": "medicine",
+  "DisplayName": "Medicine",
+  "useUntrained": false,
+  "armorCheck": false,
+  "baseAttrib": "int"
+}
+, "mysticism": {
+  "name": "mysticism",
+  "DisplayName": "Mysticism",
+  "useUntrained": false,
+  "armorCheck": false,
+  "baseAttrib": "wis"
+}
+, "perception": {
+  "name": "perception",
+  "DisplayName": "Perception",
+  "useUntrained": true,
+  "armorCheck": false,
+  "baseAttrib": "wis"
+}
+, "physicalscience":
+{
+  "name": "physicalscience",
+  "DisplayName": "Physical Science",
+  "useUntrained": false,
+  "armorCheck": false,
+  "baseAttrib": "int"
+}
+, "piloting": {
+  "name": "piloting",
+  "DisplayName": "Piloting",
+  "useUntrained": true,
+  "armorCheck": false,
+  "baseAttrib": "dex"
+}
+, "sensemotive":
+{
+  "name": "sensemotive",
+  "DisplayName": "Sensemotive",
+  "useUntrained": true,
+  "armorCheck": false,
+  "baseAttrib": "wis"
+}
+, "sleightofhand":
+{
+  "name": "sleightofhand",
+  "DisplayName": "Sleight of Hand",
+  "useUntrained": false,
+  "armorCheck": true,
+  "baseAttrib": "dex"
+}
+, "stealth": {
+  "name": "stealth",
+  "DisplayName": "Stealth",
+  "useUntrained": true,
+  "armorCheck": true,
+  "baseAttrib": "dex"
+}
+, "survival":
+{
+  "name": "survival",
+  "DisplayName": "Survival",
+  "useUntrained": true,
+  "armorCheck": false,
+  "baseAttrib": "wis"
+}
+}
