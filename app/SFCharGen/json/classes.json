@@ -9,13 +9,12 @@
       "keyAbility": ["cha"],
       "skillRanksPerLvl": 8,
       "levelGains": {
-        1: {
+        "A": {
           "baseAttackBonus": 0,
           "fortitudeSaveBonus": 0,
           "reflexSaveBonus": 2,
           "willSaveBonus": 2,
-          "features": {}
-
+          "features": null
         }
       },
       "skillModifiers": {
@@ -109,13 +108,12 @@
       "keyAbility": ["int"],
       "skillRanksPerLvl": 4,
       "levelGains": {
-        1: {
+        "A": {
           "baseAttackBonus": 0,
           "fortitudeSaveBonus": 2,
           "reflexSaveBonus": 2,
           "willSaveBonus": 0,
-          "features": {}
-
+          "features": null
         }
       },
       "skillModifiers": {
@@ -209,13 +207,12 @@
       "keyAbility": ["wis"],
       "skillRanksPerLvl": 6,
       "levelGains": {
-        1: {
+        "A": {
           "baseAttackBonus": 0,
           "fortitudeSaveBonus": 0,
           "reflexSaveBonus": 0,
           "willSaveBonus": 2,
-          "features": {}
-
+          "features": null
         }
       },
       "skillModifiers": {
@@ -309,13 +306,12 @@
       "keyAbility": ["dex"],
       "skillRanksPerLvl": 8,
       "levelGains": {
-        1: {
+        "A": {
           "baseAttackBonus": 0,
           "fortitudeSaveBonus": 0,
           "reflexSaveBonus": 2,
           "willSaveBonus": 2,
-          "features": {}
-
+          "features": null
         }
       },
       "skillModifiers": {
@@ -409,12 +405,12 @@
       "keyAbility": ["cha"],
       "skillRanksPerLvl": 4,
       "levelGains": {
-        1: {
+        "A": {
           "baseAttackBonus": 1,
           "fortitudeSaveBonus": 2,
           "reflexSaveBonus": 0,
           "willSaveBonus": 2,
-          "features": {}
+          "features": null
 
         }
       },
@@ -509,12 +505,12 @@
       "keyAbility": ["str", "dex"],
       "skillRanksPerLvl": 4,
       "levelGains": {
-        1: {
+        "A": {
           "baseAttackBonus": 1,
           "fortitudeSaveBonus": 2,
           "reflexSaveBonus": 0,
           "willSaveBonus": 2,
-          "features": {}
+          "features": null
 
         }
       },
@@ -609,12 +605,12 @@
       "keyAbility": ["int"],
       "skillRanksPerLvl": 4,
       "levelGains": {
-        1: {
+        "A": {
           "baseAttackBonus": 0,
           "fortitudeSaveBonus": 0,
           "reflexSaveBonus": 0,
           "willSaveBonus": 2,
-          "features": {}
+          "features": null
 
         }
       },

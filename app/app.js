@@ -1,15 +1,15 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+var app = angular.module('myApp', [
   'ngRoute',
   'myApp.view1',
   'myApp.view2',
   'myApp.SFCharGen',
   //  'myApp.SFShipGen',
   'myApp.version'
-]).
-directive("variableRaceBonus", function() {
+]);
+app.directive("variableRaceBonus", function() {
     return {
         template : "<span ng-show=\"races.selectedRace == 'Human'\">+{{races.availableRaces[races.selectedRace].attributeModifiers.any}} to:</span> " +
         "<select ng-show=\"races.selectedRace == 'Human'\" ng-change='addRaceBonus()' ng-model='variableRaceBonusAttrib'>" +
@@ -17,21 +17,6 @@ directive("variableRaceBonus", function() {
         "<option ng-repeat='x in attribList' value='{{x}}'>{{x}}</option>"+
         "</select>"
     };
-}).
-directive('charGenAttributesBlock', function() {
-    return {
-        templateUrl : 'SFCharGen/components/attribBlock.html'
-    }
-}).
-directive('charGenSkillsBlock', function() {
-    return {
-        templateUrl : 'SFCharGen/components/skillsBlock.html'
-    }
-}).
-directive('charGenInitiativeBlock', function() {
-    return {
-        templateUrl : 'SFCharGen/components/initiativeBlock.html'
-    }
 }).
 directive('charGenHealthAndResolveBlock', function() {
     return {

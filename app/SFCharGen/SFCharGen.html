@@ -1,6 +1,6 @@
 <div id="body">
     <h1>Starfinder Character generation utility</h1>
-    <div id="charsheet" >
+    <div id="charsheet" ng-controller="SFCharGenCtrl">
         <p class="footnote">This Utility uses the character generation flow as laid out in the Starfinder Core Rulebook </p>
         <div class="row"><div><h4>Character name</h4></div><div> <input type="text" id="charName" name="charName" ng-model="character.name" /></div>
         </div>
@@ -24,5 +24,5 @@
                 <char-gen-attack-bonus-block></char-gen-attack-bonus-block>
                 <char-gen-weapons-block></char-gen-weapons-block>
             </div>
-</div>
+        </div>
     </div></div>
