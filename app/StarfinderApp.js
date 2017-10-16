@@ -9,8 +9,8 @@ angular.module('StarfinderApp', [
 ]).
 directive("variableRaceBonus", function() {
     return {
-        template : "<span ng-show=\"races.selectedRace == 'Human'\">+{{races.availableRaces[races.selectedRace].attributeModifiers.any}} to:</span> " +
-        "<select ng-show=\"races.selectedRace == 'Human'\" ng-change='addRaceBonus()' ng-model='variableRaceBonusAttrib'>" +
+        template : "<span ng-show=\"character.race == 'Human'\">+{{races.availableRaces[character.race].attributeModifiers.any}} to:</span> " +
+        "<select ng-show=\"character.race == 'Human'\" ng-change='addRaceBonus()' ng-model='variableRaceBonusAttrib'>" +
         "<option value=''>Choose...</option>" +
         "<option ng-repeat='x in attribList' value='{{x}}'>{{x}}</option>"+
         "</select>"

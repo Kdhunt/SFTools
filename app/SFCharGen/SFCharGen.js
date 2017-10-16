@@ -101,7 +101,8 @@ angular.module('myApp.SFCharGen')
                                 {
                                     "ranks": 0
                                 }
-                        }
+                        },
+                        "feats":null
                     }
                 }
                 ,
@@ -120,66 +121,66 @@ angular.module('myApp.SFCharGen')
 // Attrib vars
        $scope.strScore = function () {
            var score = $scope.character.attributes.str.baseScore;
-           if ($scope.races !== undefined && $scope.races.selectedRace !== null) {
-               score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.str;
+           if ($scope.races !== undefined && $scope.character.race !== null) {
+               score += $scope.races.availableRaces[$scope.character.race].attributeModifiers.str;
            }
            if ($scope.races !== undefined && $scope.variableRaceBonusAttrib === "str") {
-               score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.any;
+               score += $scope.races.availableRaces[$scope.character.race].attributeModifiers.any;
            }
            score += $scope.character.attributes.str.mod;
            return score;
        };
        $scope.dexScore = function () {
            var score = $scope.character.attributes.dex.baseScore;
-           if ($scope.races !== undefined && $scope.races.selectedRace !== null) {
-               score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.dex;
+           if ($scope.races !== undefined && $scope.character.race !== null) {
+               score += $scope.races.availableRaces[$scope.character.race].attributeModifiers.dex;
            }
            if ($scope.races !== undefined && $scope.variableRaceBonusAttrib === "dex") {
-               score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.any;
+               score += $scope.races.availableRaces[$scope.character.race].attributeModifiers.any;
            }
            score += $scope.character.attributes.dex.mod;
            return score;
        };
        $scope.conScore = function () {
            var score = $scope.character.attributes.con.baseScore;
-           if ($scope.races !== undefined && $scope.races.selectedRace !== null) {
-               score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.con
+           if ($scope.races !== undefined && $scope.character.race !== null) {
+               score += $scope.races.availableRaces[$scope.character.race].attributeModifiers.con
            }
            if ($scope.races !== undefined && $scope.variableRaceBonusAttrib === "con") {
-               score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.any;
+               score += $scope.races.availableRaces[$scope.character.race].attributeModifiers.any;
            }
            score += $scope.character.attributes.con.mod;
            return score;
        };
        $scope.intScore = function () {
            var score = $scope.character.attributes.int.baseScore;
-           if ($scope.races !== undefined && $scope.races.selectedRace !== null) {
-               score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.int;
+           if ($scope.races !== undefined && $scope.character.race !== null) {
+               score += $scope.races.availableRaces[$scope.character.race].attributeModifiers.int;
            }
            if ($scope.races !== undefined && $scope.variableRaceBonusAttrib === "int") {
-               score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.any;
+               score += $scope.races.availableRaces[$scope.character.race].attributeModifiers.any;
            }
            score += $scope.character.attributes.int.mod;
            return score;
        };
        $scope.wisScore = function () {
            var score = $scope.character.attributes.wis.baseScore;
-           if ($scope.races !== undefined && $scope.races.selectedRace !== null) {
-               score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.wis;
+           if ($scope.races !== undefined && $scope.character.race !== null) {
+               score += $scope.races.availableRaces[$scope.character.race].attributeModifiers.wis;
            }
            if ($scope.races !== undefined && $scope.variableRaceBonusAttrib === "wis") {
-               score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.any;
+               score += $scope.races.availableRaces[$scope.character.race].attributeModifiers.any;
            }
            score += $scope.character.attributes.wis.mod;
            return score;
        };
        $scope.chaScore = function () {
            var score = $scope.character.attributes.cha.baseScore;
-           if ($scope.races !== undefined && $scope.races.selectedRace !== null) {
-               score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.cha;
+           if ($scope.races !== undefined && $scope.character.race !== null) {
+               score += $scope.races.availableRaces[$scope.character.race].attributeModifiers.cha;
            }
            if ($scope.races !== undefined && $scope.variableRaceBonusAttrib === "cha") {
-               score += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.any;
+               score += $scope.races.availableRaces[$scope.character.race].attributeModifiers.any;
            }
 
            score += $scope.character.attributes.cha.mod;
@@ -215,11 +216,11 @@ angular.module('myApp.SFCharGen')
 
        };
 
-//	$scope.dexScore = 	$scope.character.attributes.dex.mod += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.dex;
-//	$scope.conScore = 	$scope.character.attributes.con.mod += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.con;
-//	$scope.intScore = 	$scope.character.attributes.int.mod += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.int;
-//	$scope.wisScore = 	$scope.character.attributes.wis.mod += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.wis;
-//	$scope.chaScore = 	$scope.character.attributes.cha.mod += $scope.races.availableRaces[$scope.races.selectedRace].attributeModifiers.cha;
+//	$scope.dexScore = 	$scope.character.attributes.dex.mod += $scope.races.availableRaces[$scope.character.race].attributeModifiers.dex;
+//	$scope.conScore = 	$scope.character.attributes.con.mod += $scope.races.availableRaces[$scope.character.race].attributeModifiers.con;
+//	$scope.intScore = 	$scope.character.attributes.int.mod += $scope.races.availableRaces[$scope.character.race].attributeModifiers.int;
+//	$scope.wisScore = 	$scope.character.attributes.wis.mod += $scope.races.availableRaces[$scope.character.race].attributeModifiers.wis;
+//	$scope.chaScore = 	$scope.character.attributes.cha.mod += $scope.races.availableRaces[$scope.character.race].attributeModifiers.cha;
        $scope.variableRaceBonusAttrib = null;
        $scope.variableThemeBonus = null;
        $scope.variableClassBonus = null;
@@ -257,7 +258,7 @@ angular.module('myApp.SFCharGen')
            .then(function(res){
                $scope.dieties = res.data;
            });
-       $http.get('SFCharGen/json/skillList.json')
+       $http.get('SFCharGen/json/skilllist.json')
            .then(function(res){
                $scope.skillList = res.data;
            });

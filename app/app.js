@@ -3,26 +3,20 @@
 // Declare app level module which depends on views, and components
 var app = angular.module('myApp', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
   'myApp.SFCharGen',
-  //  'myApp.SFShipGen',
+    'myApp.SFShipGen',
   'myApp.version'
 ]);
 app.directive("variableRaceBonus", function() {
     return {
-        template : "<span ng-show=\"races.selectedRace == 'Human'\">+{{races.availableRaces[races.selectedRace].attributeModifiers.any}} to:</span> " +
-        "<select ng-show=\"races.selectedRace == 'Human'\" ng-change='addRaceBonus()' ng-model='variableRaceBonusAttrib'>" +
+        template : "<span ng-show=\"character.race == 'Human'\">+{{races.availableRaces[character.race].attributeModifiers.any}} to:</span> " +
+        "<select ng-show=\"character.race == 'Human'\" ng-change='addRaceBonus()' ng-model='variableRaceBonusAttrib'>" +
         "<option value=''>Choose...</option>" +
         "<option ng-repeat='x in attribList' value='{{x}}'>{{x}}</option>"+
         "</select>"
     };
 }).
-directive('charGenHealthAndResolveBlock', function() {
-    return {
-        templateUrl : 'SFCharGen/components/healthandresolveBlock.html'
-    }
-}).
+
 directive('charGenArmorClassBlock', function() {
     return {
         templateUrl : 'SFCharGen/components/armorclassBlock.html'
@@ -66,5 +60,5 @@ directive('charGenDescriptionBlock', function() {
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/SFCharGen'});
 }]);

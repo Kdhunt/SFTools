@@ -2,7 +2,7 @@
 
     <div>
         <div class="element">
-            <select id="w1" ng-model="races.selectedRace" ng-change="setBaseAttribVals()">
+            <select id="w1" ng-model="character.race" ng-change="setBaseAttribVals()">
                 <option value=""></option>
                 <option  ng-repeat="x in races.availableRaces" value="{{x.name}}">{{x.name}}</option>
             </select>
@@ -11,7 +11,7 @@
     </div>
     <div>
         <div class="element">
-            <select id="w2" ng-model="themes.selectedTheme">
+            <select id="w2" ng-model="character.theme">
                 <option value=""></option>
                 <option  ng-repeat="x in themes.availableThemes" value="{{x.name}}">{{x.name}}</option>
             </select>
@@ -24,7 +24,6 @@
                 <option value=""></option>
                 <option  ng-repeat="x in classes.availableClasses" value="{{x.name}}">{{x.name}}</option>
             </select>
-
         </div>
         <div class="elementTitle">Class</div>
     </div>

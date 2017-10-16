@@ -25,8 +25,8 @@ SFCharGen.controller('SFCharGenSkillBlockCtrl', function($scope) {
         return total;
     };
     $scope.calcRacialSkillMod = function (skill) {
-        return ($scope.races !== undefined && $scope.races.selectedRace !== null)
-            ? $scope.races.availableRaces[$scope.races.selectedRace].skillModifiers[skill] :
+        return ($scope.races !== undefined && $scope.character.race !== null)
+            ? $scope.races.availableRaces[$scope.character.race].skillModifiers[skill] :
             0;
 
 

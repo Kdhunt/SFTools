@@ -1,13 +1,21 @@
 <div><h4>Health and Resolve</h4></div>
-<div class="initBlock struct">
+<div class="hnrBlock struct" ng-controller="SFCharGenHealthAndResolveBlockCtrl">
     <div class="labels">
-        <div class="initTotal">Total</div>
-        <div class="dexMod">Dex Modifier</div>
-        <div class="miscMod">Misc Modifier</div>
+        <div class="hp"></div>
+        <div class="hp">HP</div>
+        <div class="sp">SP</div>
+        <div class="rp">RP</div>
     </div>
     <div class="data">
-        <div class="initTotal">Total</div>
-        <div class="dexMod">Dex Modifier</div>
-        <div class="miscMod">Misc Modifier</div>
+        <div class="hp">Total:</div>
+        <div class="hp">{{getTotalHP()}}</div>
+        <div class="sp">{{getTotalSP()}}</div>
+        <div class="rp">{{getTotalRP()}}</div>
+    </div>
+    <div class="data">
+        <div class="hp">Current:</div>
+        <div class="hp"></div>
+        <div class="sp"></div>
+        <div class="rp"></div>
     </div>
 </div>
