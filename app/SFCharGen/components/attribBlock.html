@@ -1,7 +1,7 @@
 <div><h4>Attributes</h4></div>
 <div class="attribBlock struct" ng-controller="SFCharGenAttribBlockCtrl">
     <div class="labels">
-        <div class="key"></div>
+        <span class="key"></span>
         <div class="stat"><variable-race-bonus></variable-race-bonus>{{variableThemeBonus}}{{variableClassBonus}}</div>
         <div class="score">score</div>
         <div class="mod">modifier</div>
@@ -11,7 +11,7 @@
 
     <!-- end test -->
     <div class="attrib str">
-        <div class="key" ng-show="classes.availableClasses[character.levels[0].selectedClass].keyAbility.indexOf('str') >= 0">&#128273;</div>
+        <span class="key" ng-show="classes.availableClasses[character.levels[0].selectedClass].keyAbility.indexOf('str') >= 0">&#128273;</span>
         <div class="stat">
             <div class="attribVals" ng-hide="character.race == null ||character.race == '' || character.race == 'Human' && variableRaceBonusAttrib == null" ng-show="character.race == 'Human' && variableRaceBonusAttrib != null || character.race != 'Human' && character.race != null">
                 <div class="raise" ng-click="attribIncrease('str')"></div>
@@ -25,7 +25,7 @@
         <div class="upgradeMod"><span>+</span></div>
     </div>
     <div class="attrib dex">
-        <div class="key" ng-show="classes.availableClasses[character.levels[0].selectedClass].keyAbility.indexOf('dex') >= 0">&#128273;</div>
+        <span class="key" ng-show="classes.availableClasses[character.levels[0].selectedClass].keyAbility.indexOf('dex') >= 0">&#128273;</span>
         <div class="stat">
             <div class="attribVals" ng-hide="character.race == null ||character.race == '' || character.race == 'Human' && variableRaceBonusAttrib == null" ng-show="character.race == 'Human' && variableRaceBonusAttrib != null || character.race != 'Human' && character.race != null">
                 <div class="raise" ng-click="attribIncrease('dex')"></div>
@@ -38,7 +38,7 @@
         <div class="upgradeMod"><span>+</span></div>
     </div>
     <div class="attrib con">
-        <div class="key" ng-show="classes.availableClasses[character.levels[0].selectedClass].keyAbility.indexOf('con') >= 0">&#128273;</div>
+        <span class="key" ng-show="classes.availableClasses[character.levels[0].selectedClass].keyAbility.indexOf('con') >= 0">&#128273;</span>
         <div class="stat">
             <div class="attribVals" ng-hide="character.race == null ||character.race == '' || character.race == 'Human' && variableRaceBonusAttrib == null" ng-show="character.race == 'Human' && variableRaceBonusAttrib != null || character.race != 'Human' && character.race != null">
                 <div class="raise" ng-click="attribIncrease('con')"></div>
@@ -51,7 +51,7 @@
         <div class="upgradeMod"><span>+</span></div>
     </div>
     <div class="attrib int">
-        <div class="key" ng-show="classes.availableClasses[character.levels[0].selectedClass].keyAbility.indexOf('int') >= 0">&#128273;</div>
+        <span class="key" ng-show="classes.availableClasses[character.levels[0].selectedClass].keyAbility.indexOf('int') >= 0">&#128273;</span>
         <div class="stat">
             <div class="attribVals" ng-hide="character.race == null ||character.race == '' || character.race == 'Human' && variableRaceBonusAttrib == null" ng-show="character.race == 'Human' && variableRaceBonusAttrib != null || character.race != 'Human' && character.race != null">
                 <div class="raise" ng-click="attribIncrease('int')"></div>
@@ -64,7 +64,7 @@
         <div class="upgradeMod"><span>+</span></div>
     </div>
     <div class="attrib wis">
-        <div class="key" ng-show="classes.availableClasses[character.levels[0].selectedClass].keyAbility.indexOf('wis') >= 0">&#128273;</div>
+        <span class="key" ng-show="classes.availableClasses[character.levels[0].selectedClass].keyAbility.indexOf('wis') >= 0">&#128273;</span>
         <div class="stat">
             <div class="attribVals" ng-hide="character.race == null ||character.race == '' || character.race == 'Human' && variableRaceBonusAttrib == null" ng-show="character.race == 'Human' && variableRaceBonusAttrib != null || character.race != 'Human' && character.race != null">
                 <div class="raise" ng-click="attribIncrease('wis')"></div>
@@ -77,7 +77,7 @@
         <div class="upgradeMod"><span>+</span></div>
     </div>
     <div class="attrib cha">
-        <div class="key" ng-show="classes.availableClasses[character.levels[0].selectedClass].keyAbility.indexOf('cha') >= 0">&#128273;</div>
+        <span class="key" ng-show="classes.availableClasses[character.levels[0].selectedClass].keyAbility.indexOf('cha') >= 0">&#128273;</span>
         <div class="stat" >
             <div class="attribVals" ng-hide="character.race == null ||character.race == '' || character.race == 'Human' && variableRaceBonusAttrib == null" ng-show="character.race == 'Human' && variableRaceBonusAttrib != null || character.race != 'Human' && character.race != null">
                 <div class="raise" ng-click="attribIncrease('cha')"></div>

@@ -36,13 +36,13 @@ SFCharGen.controller('SFCharGenHealthAndResolveBlockCtrl', function($scope) {
         total += (($scope.currentLevel()/2) > 1)?($scope.currentLevel()/2):1;
         //key attrib mod
         var inc = 0;
-       // if($scope.classes !== undefined && $scope.character.levels[0].selectedClass !== null){
+        if($scope.classes !== undefined && $scope.character.levels[0].selectedClass !== null){
         for(var k in $scope.classes.availableClasses[$scope.character.levels[0].selectedClass].keyAbility){
             var m = $scope.getAttribMod($scope.classes.availableClasses[$scope.character.levels[0].selectedClass].keyAbility[k]);
             inc = (m>inc)?m:inc;
-        }//}
+        }}
        total += inc;
-        return total;
+        return (total >= 1)?total:1;
     };
 
 });
