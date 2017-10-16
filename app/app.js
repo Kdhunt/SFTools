@@ -22,16 +22,6 @@ directive('charGenArmorClassBlock', function() {
         templateUrl : 'SFCharGen/components/armorclassBlock.html'
     }
 }).
-directive('charGenSavingThrowsBlock', function() {
-    return {
-        templateUrl : 'SFCharGen/components/savingthrowsBlock.html'
-    }
-}).
-directive('charGenAttackBonusBlock', function() {
-    return {
-        templateUrl : 'SFCharGen/components/attackBonusBlock.html'
-    }
-}).
 directive('charGenWeaponsBlock', function() {
     return {
         templateUrl : 'SFCharGen/components/weaponsBlock.html'
